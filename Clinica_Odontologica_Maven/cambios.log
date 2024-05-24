@@ -1,0 +1,80 @@
+[2024-05-23 15:55:50] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 15:55:50] [ INFO ] [PacienteDAOH2:18] inciando las operaciones de guardado
+[2024-05-23 15:55:50] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-23 15:55:50] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-23 15:55:50] [ INFO ] [PacienteDAOH2:35] paciente guardado
+[2024-05-23 15:55:50] [ INFO ] [PacienteDAOH2:46] iniciando la operacion de buscado de un paciente con id : 3
+[2024-05-23 15:55:50] [ INFO ] [DomicilioDAOH2:45] iniciando la busqueda de un domicilio con id: 3
+[2024-05-23 15:56:49] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 15:56:49] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: org.example.model.Odontologo@6ea2bc93
+[2024-05-23 15:56:49] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: org.example.model.Odontologo@4e928fbf
+[2024-05-23 15:57:04] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 15:57:04] [ INFO ] [PacienteDAOH2:46] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-23 15:57:04] [ INFO ] [DomicilioDAOH2:45] iniciando la busqueda de un domicilio con id: 2
+[2024-05-23 16:02:38] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 16:02:38] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: org.example.model.Odontologo@352ff4da
+[2024-05-23 16:02:38] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: org.example.model.Odontologo@748741cb
+[2024-05-23 16:04:01] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 16:04:01] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Perez
+[2024-05-23 16:04:01] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Lopez
+[2024-05-23 16:10:55] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 16:10:55] [ INFO ] [PacienteDAOH2:18] inciando las operaciones de guardado
+[2024-05-23 16:10:55] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-23 16:10:55] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-23 16:10:55] [ INFO ] [PacienteDAOH2:35] paciente guardado
+[2024-05-23 16:10:55] [ INFO ] [PacienteDAOH2:46] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-23 16:10:55] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Perez
+[2024-05-23 16:10:55] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Lopez
+[2024-05-23 16:22:07] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 16:22:07] [ INFO ] [PacienteDAOH2:18] inciando las operaciones de guardado
+[2024-05-23 16:22:07] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-23 16:22:07] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-23 16:22:07] [ INFO ] [PacienteDAOH2:35] paciente guardado
+[2024-05-23 16:22:07] [ INFO ] [PacienteDAOH2:46] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-23 16:22:07] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Perez
+[2024-05-23 16:22:07] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Lopez
+[2024-05-23 16:42:54] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 16:42:54] [ INFO ] [PacienteDAOH2:19] inciando las operaciones de guardado
+[2024-05-23 16:42:54] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-23 16:42:54] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-23 16:42:54] [ INFO ] [PacienteDAOH2:36] paciente guardado
+[2024-05-23 16:42:54] [ INFO ] [PacienteDAOH2:47] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-23 16:42:54] [ ERROR] [PacienteDAOH2:74] Ha ocurrido un error inesperadoNo se encontró ningún paciente con el ID: 8
+[2024-05-23 16:42:54] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Perez
+[2024-05-23 16:42:54] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Lopez
+[2024-05-23 16:45:08] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 16:45:08] [ INFO ] [PacienteDAOH2:19] inciando las operaciones de guardado
+[2024-05-23 16:45:08] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-23 16:45:09] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-23 16:45:09] [ INFO ] [PacienteDAOH2:36] paciente guardado
+[2024-05-23 16:45:09] [ INFO ] [PacienteDAOH2:47] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-23 16:45:09] [ ERROR] [PacienteDAOH2:74] Ha ocurrido un error inesperadoNo se encontró ningún paciente con el ID: 8
+[2024-05-23 16:45:09] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Perez
+[2024-05-23 16:45:09] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Lopez
+[2024-05-23 16:47:00] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 16:47:00] [ INFO ] [PacienteDAOH2:19] inciando las operaciones de guardado
+[2024-05-23 16:47:00] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-23 16:47:00] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-23 16:47:00] [ INFO ] [PacienteDAOH2:36] paciente guardado
+[2024-05-23 16:47:00] [ INFO ] [PacienteDAOH2:47] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-23 16:47:00] [ ERROR] [PacienteDAOH2:74] Ha ocurrido un error inesperadoNo se encontró ningún paciente con el ID: 8
+[2024-05-23 16:47:00] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Perez
+[2024-05-23 16:47:00] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Lopez
+[2024-05-23 16:54:00] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 16:54:00] [ INFO ] [PacienteDAOH2:19] inciando las operaciones de guardado
+[2024-05-23 16:54:00] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-23 16:54:00] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-23 16:54:00] [ INFO ] [PacienteDAOH2:36] paciente guardado
+[2024-05-23 16:54:00] [ INFO ] [PacienteDAOH2:47] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-23 16:54:00] [ ERROR] [PacienteDAOH2:74] Ha ocurrido un error inesperadoNo se encontró ningún paciente con el ID: 8
+[2024-05-23 16:54:00] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Perez
+[2024-05-23 16:54:00] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Lopez
+[2024-05-23 16:56:35] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-23 16:56:35] [ INFO ] [PacienteDAOH2:19] inciando las operaciones de guardado
+[2024-05-23 16:56:35] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-23 16:56:35] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-23 16:56:35] [ INFO ] [PacienteDAOH2:36] paciente guardado
+[2024-05-23 16:56:35] [ INFO ] [PacienteDAOH2:47] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-23 16:56:35] [ ERROR] [PacienteDAOH2:74] Ha ocurrido un error inesperadoNo se encontró ningún paciente con el ID: 8
+[2024-05-23 16:56:35] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Perez
+[2024-05-23 16:56:35] [ INFO ] [OdontologoDAOH2:27] Odontólogo guardado con éxito: Lopez

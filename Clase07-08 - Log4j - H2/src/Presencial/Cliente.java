@@ -2,13 +2,16 @@ package Presencial;
 
 
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 
 public class Cliente {
-    private static final Logger logger= LogManager.getLogger(Cliente.class);
+    //private static final Logger logger= LogManager.getLogger(Cliente.class); //Este se usa con Log4J2
+    private static final Logger logger = Logger.getLogger(Cliente.class);
     public static void main(String[] args) {
             Connection connection= null; //creando el objeto e inicializarlo en null
             try{
