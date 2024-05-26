@@ -106,3 +106,338 @@ INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
 Column count does not match; SQL statement:
 INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
 [2024-05-25 17:56:35] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 21:20:05] [ WARN ] [BD:60] Imposible eliminar "PACIENTES" debido a que "CONSTRAINT_C3" depende de él.
+Cannot drop "PACIENTES" because "CONSTRAINT_C3" depends on it; SQL statement:
+DROP TABLE IF EXISTS PACIENTES [90107-224]
+[2024-05-25 21:20:06] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 21:20:06] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 21:20:06] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 21:20:06] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 21:20:06] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 21:20:06] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 21:20:06] [ ERROR] [PacienteDAOH2:55] Cannot invoke "java.lang.Integer.intValue()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" is null
+[2024-05-25 21:20:06] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 21:20:06] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 21:20:06] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 21:23:08] [ WARN ] [BD:60] Imposible eliminar "PACIENTES" debido a que "CONSTRAINT_C3" depende de él.
+Cannot drop "PACIENTES" because "CONSTRAINT_C3" depends on it; SQL statement:
+DROP TABLE IF EXISTS PACIENTES [90107-224]
+[2024-05-25 21:23:08] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:0 */ 1, '12345', 'Juan', 'Perez')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:0 */ 1, '12345', 'Juan', 'Perez')"; SQL statement:
+INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES (?,?,?) [23505-224]
+[2024-05-25 21:23:08] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:0 */ 2, '67890', 'Ana', 'Lopez')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:0 */ 2, '67890', 'Ana', 'Lopez')"; SQL statement:
+INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES (?,?,?) [23505-224]
+[2024-05-25 21:23:08] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 21:23:08] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 21:23:08] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 21:23:08] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Pérez
+[2024-05-25 21:23:08] [ INFO ] [PacienteDAOH2:42] paciente guardado
+[2024-05-25 21:23:08] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 21:23:08] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: GIRALDO
+[2024-05-25 21:23:08] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 21:29:05] [ WARN ] [BD:60] Imposible eliminar "PACIENTES" debido a que "CONSTRAINT_C3" depende de él.
+Cannot drop "PACIENTES" because "CONSTRAINT_C3" depends on it; SQL statement:
+DROP TABLE IF EXISTS PACIENTES [90107-224]
+[2024-05-25 21:29:05] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Pérez
+[2024-05-25 21:29:05] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Lopez
+[2024-05-25 21:29:05] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 21:29:05] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 21:29:05] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 21:29:05] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Pérez
+[2024-05-25 21:29:05] [ INFO ] [PacienteDAOH2:42] paciente guardado
+[2024-05-25 21:29:05] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 21:29:05] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: GIRALDO
+[2024-05-25 21:29:05] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 21:30:10] [ WARN ] [BD:60] Imposible eliminar "PACIENTES" debido a que "CONSTRAINT_C3" depende de él.
+Cannot drop "PACIENTES" because "CONSTRAINT_C3" depends on it; SQL statement:
+DROP TABLE IF EXISTS PACIENTES [90107-224]
+[2024-05-25 21:30:10] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 21:30:10] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Ana Lopez
+[2024-05-25 21:30:10] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 21:30:10] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 21:30:10] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 21:30:10] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 21:30:10] [ INFO ] [PacienteDAOH2:42] paciente guardado
+[2024-05-25 21:30:10] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 21:30:10] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: LEOPOLDO GIRALDO
+[2024-05-25 21:30:10] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 21:32:33] [ WARN ] [BD:60] Imposible eliminar "PACIENTES" debido a que "CONSTRAINT_C3" depende de él.
+Cannot drop "PACIENTES" because "CONSTRAINT_C3" depends on it; SQL statement:
+DROP TABLE IF EXISTS PACIENTES [90107-224]
+[2024-05-25 21:32:33] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: LEOPOLDO GIRALDO
+[2024-05-25 21:32:33] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 21:32:33] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Ana Lopez
+[2024-05-25 21:32:33] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 21:32:33] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 21:32:33] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 21:32:33] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 21:32:33] [ INFO ] [PacienteDAOH2:42] paciente guardado
+[2024-05-25 21:32:33] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 21:32:33] [ INFO ] [DomicilioDAOH2:45] iniciando la busqueda de un domicilio con id: 1
+[2024-05-25 21:32:33] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 16
+[2024-05-25 21:32:33] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 21:42:53] [ WARN ] [BD:60] Imposible eliminar "PACIENTES" debido a que "CONSTRAINT_C3" depende de él.
+Cannot drop "PACIENTES" because "CONSTRAINT_C3" depends on it; SQL statement:
+DROP TABLE IF EXISTS PACIENTES [90107-224]
+[2024-05-25 21:42:53] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Leopoldo Giraldo
+[2024-05-25 21:42:53] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 21:42:53] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Ana Lopez
+[2024-05-25 21:42:53] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 21:42:53] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 21:42:53] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 21:42:53] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 21:42:53] [ INFO ] [PacienteDAOH2:42] paciente guardado
+[2024-05-25 21:42:53] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 21:42:53] [ INFO ] [DomicilioDAOH2:45] iniciando la busqueda de un domicilio con id: 1
+[2024-05-25 21:42:53] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 16
+[2024-05-25 21:42:54] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 21:50:31] [ WARN ] [BD:60] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:31] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:31] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:31] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:31] [ ERROR] [OdontologoDAOH2:84] Error al listar los odontólogos: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:31] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 21:50:31] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 21:50:31] [ ERROR] [DomicilioDAOH2:37] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:31] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:31] [ ERROR] [PacienteDAOH2:55] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:31] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 21:50:31] [ ERROR] [PacienteDAOH2:83] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:31] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 21:50:31] [ ERROR] [OdontologoDAOH2:54] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:46] [ WARN ] [BD:60] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:46] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:46] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:46] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:46] [ ERROR] [OdontologoDAOH2:84] Error al listar los odontólogos: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:46] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 21:50:46] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 21:50:46] [ ERROR] [DomicilioDAOH2:37] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:46] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:46] [ ERROR] [PacienteDAOH2:55] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:46] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 21:50:46] [ ERROR] [PacienteDAOH2:83] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:46] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 21:50:46] [ ERROR] [OdontologoDAOH2:54] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:59] [ WARN ] [BD:60] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:59] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:59] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:59] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:59] [ ERROR] [OdontologoDAOH2:84] Error al listar los odontólogos: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:59] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 21:50:59] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 21:50:59] [ ERROR] [DomicilioDAOH2:37] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:59] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:59] [ ERROR] [PacienteDAOH2:55] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:59] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 21:50:59] [ ERROR] [PacienteDAOH2:83] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 21:50:59] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 21:50:59] [ ERROR] [OdontologoDAOH2:54] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:49:11] [ WARN ] [BD:62] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:49:11] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:49:11] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:49:11] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:49:11] [ ERROR] [OdontologoDAOH2:84] Error al listar los odontólogos: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:49:11] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 22:49:11] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 22:49:11] [ ERROR] [DomicilioDAOH2:37] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:49:11] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:49:11] [ ERROR] [PacienteDAOH2:55] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:49:11] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 22:49:11] [ ERROR] [PacienteDAOH2:83] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:49:11] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 22:49:11] [ ERROR] [OdontologoDAOH2:54] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:50:19] [ WARN ] [BD:62] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:50:19] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:50:19] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:50:19] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:50:19] [ ERROR] [OdontologoDAOH2:84] Error al listar los odontólogos: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:50:19] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 22:50:19] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 22:50:19] [ ERROR] [DomicilioDAOH2:37] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:50:19] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:50:19] [ ERROR] [PacienteDAOH2:55] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:50:19] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 22:50:19] [ ERROR] [PacienteDAOH2:83] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:50:19] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 22:50:19] [ ERROR] [OdontologoDAOH2:54] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-25 22:52:08] [ INFO ] [BD:59] tabla creada con exito
+[2024-05-25 22:52:08] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Leopoldo Giraldo
+[2024-05-25 22:52:08] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 22:52:08] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Ana Lopez
+[2024-05-25 22:52:08] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 22:52:08] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 22:52:08] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 22:52:08] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 22:52:08] [ INFO ] [PacienteDAOH2:42] paciente guardado
+[2024-05-25 22:52:08] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 22:52:08] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:04:23] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-25 23:04:23] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Leopoldo Giraldo
+[2024-05-25 23:04:23] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 23:04:23] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Ana Lopez
+[2024-05-25 23:04:23] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado
+[2024-05-25 23:04:23] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 23:04:23] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 23:04:23] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 23:04:23] [ INFO ] [PacienteDAOH2:42] paciente guardado
+[2024-05-25 23:04:23] [ INFO ] [PacienteDAOH2:61] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 23:04:23] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:12:16] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-25 23:12:16] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Leopoldo Giraldo
+[2024-05-25 23:12:16] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 23:12:16] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Ana Lopez
+[2024-05-25 23:12:16] [ INFO ] [OdontologoDAOH2:72] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-25 23:12:16] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado
+[2024-05-25 23:12:16] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 23:12:16] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 23:12:16] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Juan Pérez
+[2024-05-25 23:12:16] [ INFO ] [PacienteDAOH2:42] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Toro', cedula='111111', fechaIngreso=2024-05-21, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='cali', provincia='Colombia'}, email='luisa@email.com', odontologo=Odontologo{id=4, numeroMatricula='32323232', nombre='Juan', apellido='Pérez'}}
+[2024-05-25 23:12:16] [ INFO ] [PacienteDAOH2:61] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 23:12:16] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:12:52] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-25 23:12:52] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}
+[2024-05-25 23:12:52] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=2, numeroMatricula='32323232', nombre='Juan', apellido='Pérez'}
+[2024-05-25 23:12:52] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=3, numeroMatricula='67890', nombre='Ana', apellido='Lopez'}
+[2024-05-25 23:12:52] [ INFO ] [OdontologoDAOH2:72] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-25 23:12:52] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado
+[2024-05-25 23:12:52] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 23:12:52] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 23:12:52] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=4, numeroMatricula='32323232', nombre='Juan', apellido='Pérez'}
+[2024-05-25 23:12:52] [ INFO ] [PacienteDAOH2:42] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Toro', cedula='111111', fechaIngreso=2024-05-21, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='cali', provincia='Colombia'}, email='luisa@email.com', odontologo=Odontologo{id=4, numeroMatricula='32323232', nombre='Juan', apellido='Pérez'}}
+[2024-05-25 23:12:52] [ INFO ] [PacienteDAOH2:61] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 23:12:52] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:22:01] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-25 23:22:01] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}
+[2024-05-25 23:22:01] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=2, numeroMatricula='32323232', nombre='Juan', apellido='Pérez'}
+[2024-05-25 23:22:01] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=3, numeroMatricula='67890', nombre='Ana', apellido='Lopez'}
+[2024-05-25 23:22:01] [ INFO ] [OdontologoDAOH2:72] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-25 23:22:01] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado
+[2024-05-25 23:22:01] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 23:22:01] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 23:22:01] [ INFO ] [PacienteDAOH2:40] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Toro', cedula='111111', fechaIngreso=2024-05-21, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='cali', provincia='Colombia'}, email='luisa@email.com', odontologo=Odontologo{id=2, numeroMatricula='32323232', nombre='Juan', apellido='Pérez'}}
+[2024-05-25 23:22:01] [ INFO ] [PacienteDAOH2:53] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 23:22:01] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:23:39] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-25 23:23:39] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}
+[2024-05-25 23:23:39] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=2, numeroMatricula='32323232', nombre='Juan', apellido='Pérez'}
+[2024-05-25 23:23:39] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=3, numeroMatricula='67890', nombre='Ana', apellido='Lopez'}
+[2024-05-25 23:23:39] [ INFO ] [OdontologoDAOH2:72] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-25 23:23:39] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado de paciente
+[2024-05-25 23:23:39] [ INFO ] [DomicilioDAOH2:20] Iniciando las operaciones de guardado de domicilio
+[2024-05-25 23:23:39] [ INFO ] [DomicilioDAOH2:34] Domicilio guardado con éxito
+[2024-05-25 23:23:39] [ INFO ] [PacienteDAOH2:40] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Toro', cedula='111111', fechaIngreso=2024-05-21, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='cali', provincia='Colombia'}, email='luisa@email.com', odontologo=Odontologo{id=2, numeroMatricula='32323232', nombre='Juan', apellido='Pérez'}}
+[2024-05-25 23:23:39] [ INFO ] [PacienteDAOH2:53] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 23:23:39] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:23:54] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-25 23:23:54] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}
+[2024-05-25 23:23:54] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=2, numeroMatricula='32323232', nombre='Juan', apellido='Pérez'}
+[2024-05-25 23:23:54] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=3, numeroMatricula='67890', nombre='Ana', apellido='Lopez'}
+[2024-05-25 23:23:54] [ INFO ] [OdontologoDAOH2:72] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-25 23:23:54] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado de paciente
+[2024-05-25 23:23:54] [ INFO ] [DomicilioDAOH2:20] Iniciando las operaciones de guardado de domicilio
+[2024-05-25 23:23:54] [ INFO ] [DomicilioDAOH2:34] Domicilio guardado con éxito
+[2024-05-25 23:23:54] [ INFO ] [PacienteDAOH2:40] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Toro', cedula='111111', fechaIngreso=2024-05-21, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='cali', provincia='Colombia'}, email='luisa@email.com', odontologo=Odontologo{id=2, numeroMatricula='32323232', nombre='Juan', apellido='Pérez'}}
+[2024-05-25 23:23:54] [ INFO ] [PacienteDAOH2:53] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 23:23:54] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:33:28] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-25 23:33:28] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}
+[2024-05-25 23:33:28] [ INFO ] [OdontologoDAOH2:72] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-25 23:33:28] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado de paciente
+[2024-05-25 23:33:28] [ INFO ] [DomicilioDAOH2:20] Iniciando las operaciones de guardado de domicilio
+[2024-05-25 23:33:28] [ INFO ] [DomicilioDAOH2:34] Domicilio guardado con éxito
+[2024-05-25 23:33:28] [ INFO ] [PacienteDAOH2:40] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Toro', cedula='111111', fechaIngreso=2024-05-21, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='cali', provincia='Colombia'}, email='luisa@email.com', odontologo=Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}}
+[2024-05-25 23:33:28] [ INFO ] [PacienteDAOH2:68] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 23:33:28] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:35:25] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-25 23:35:25] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}
+[2024-05-25 23:35:25] [ INFO ] [OdontologoDAOH2:72] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-25 23:35:25] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado de paciente
+[2024-05-25 23:35:25] [ INFO ] [DomicilioDAOH2:20] Iniciando las operaciones de guardado de domicilio
+[2024-05-25 23:35:25] [ INFO ] [DomicilioDAOH2:34] Domicilio guardado con éxito
+[2024-05-25 23:35:25] [ INFO ] [PacienteDAOH2:40] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Toro', cedula='111111', fechaIngreso=2024-05-21, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='cali', provincia='Colombia'}, email='luisa@email.com', odontologo=Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}}
+[2024-05-25 23:35:25] [ INFO ] [PacienteDAOH2:68] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-25 23:35:25] [ INFO ] [DomicilioDAOH2:45] Iniciando la busqueda de un domicilio con id: 2
+[2024-05-25 23:35:25] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 0
+[2024-05-25 23:35:25] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:38:51] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-25 23:38:52] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}
+[2024-05-25 23:38:52] [ INFO ] [OdontologoDAOH2:72] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-25 23:38:52] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado de paciente
+[2024-05-25 23:38:52] [ INFO ] [DomicilioDAOH2:20] Iniciando las operaciones de guardado de domicilio
+[2024-05-25 23:38:52] [ INFO ] [DomicilioDAOH2:34] Domicilio guardado con éxito
+[2024-05-25 23:38:52] [ INFO ] [PacienteDAOH2:40] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Toro', cedula='111111', fechaIngreso=2024-05-21, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='cali', provincia='Colombia'}, email='luisa@email.com', odontologo=Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}}
+[2024-05-25 23:38:52] [ INFO ] [PacienteDAOH2:68] iniciando la operacion de buscado de un paciente con id : 3
+[2024-05-25 23:38:52] [ INFO ] [DomicilioDAOH2:45] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-25 23:38:52] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:38:52] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:47:17] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-25 23:47:17] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}
+[2024-05-25 23:47:17] [ INFO ] [OdontologoDAOH2:72] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-25 23:47:17] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado de paciente
+[2024-05-25 23:47:17] [ INFO ] [DomicilioDAOH2:20] Iniciando las operaciones de guardado de domicilio
+[2024-05-25 23:47:17] [ INFO ] [DomicilioDAOH2:34] Domicilio guardado con éxito
+[2024-05-25 23:47:17] [ INFO ] [PacienteDAOH2:40] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Toro', cedula='111111', fechaIngreso=2024-05-21, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='cali', provincia='Colombia'}, email='luisa@email.com', odontologo=Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}}
+[2024-05-25 23:47:17] [ INFO ] [PacienteDAOH2:68] iniciando la operacion de buscado de un paciente con id : 3
+[2024-05-25 23:47:17] [ INFO ] [DomicilioDAOH2:45] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-25 23:47:17] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 23:47:17] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1

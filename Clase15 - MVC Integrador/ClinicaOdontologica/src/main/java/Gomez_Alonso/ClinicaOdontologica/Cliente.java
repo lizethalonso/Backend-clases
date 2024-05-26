@@ -16,10 +16,12 @@ public class Cliente {
         // Listar odontologos
 
         OdontologoService odontologoService = new OdontologoService();
-        Odontologo odontologo1 = new Odontologo("32323232","Juan","Pérez");
-        Odontologo odontologo2 = new Odontologo("67890", "Ana", "Lopez");
-        odontologoService.guardarOdontologo(odontologo1);
-        odontologoService.guardarOdontologo(odontologo2);
+        Odontologo odontologo0 = new Odontologo("12457SDF0","Leopoldo","Giraldo");
+        //Odontologo odontologo1 = new Odontologo("32323232","Juan","Pérez");
+        //Odontologo odontologo2 = new Odontologo("67890", "Ana", "Lopez");
+        odontologoService.guardarOdontologo(odontologo0);
+        //odontologoService.guardarOdontologo(odontologo1);
+        //odontologoService.guardarOdontologo(odontologo2);
         List<Odontologo> odontologos = odontologoService.buscarTodos();
 
         System.out.println("Odontologos: ");
@@ -27,14 +29,10 @@ public class Cliente {
             System.out.println(odontologo.toString());
         }
         //Buscar por ID paciente
-        Paciente paciente= new Paciente("Luisa","Toro","111111", LocalDate.of(2024,5,21),new Domicilio("calle falsa",123,"cali","Colombia"),"luisa@email.com",odontologo1);
+        Paciente paciente= new Paciente("Luisa","Toro","111111", LocalDate.of(2024,5,21),new Domicilio("calle falsa",123,"cali","Colombia"),"luisa@email.com",odontologo0);
         PacienteService pacienteService= new PacienteService();
         pacienteService.guardarPaciente(paciente);
-
-        System.out.println("Paciente encontrado: "+pacienteService.buscarPorID(8));
-
-        Odontologo odontologo = new Odontologo("12457SDF0","LEOPOLDO","GIRALDO");
-        odontologoService.guardarOdontologo(odontologo);
+        System.out.println("Paciente encontrado: "+pacienteService.buscarPorID(3));
 
         System.out.printf("Odontologo encontrado: " + odontologoService.buscarPorID(1));
     }

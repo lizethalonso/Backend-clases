@@ -17,7 +17,7 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
 
     @Override
     public Domicilio guardar(Domicilio domicilio) {
-        logger.info("iniciando las operaciones de guardado");
+        logger.info("Iniciando las operaciones de guardado de domicilio");
         Connection connection=null;
         try{
             connection=BD.getConnection();
@@ -31,7 +31,7 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
             while(clave.next()){
                 domicilio.setId(clave.getInt(1));
             }
-            logger.info("domicilio guardado");
+            logger.info("Domicilio guardado con éxito");
 
         }catch (Exception e){
             logger.error(e.getMessage());
@@ -42,7 +42,7 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
 
     @Override
     public Domicilio buscarPorId(Integer id) {
-        logger.info("iniciando la busqueda de un domicilio con id: "+id);
+        logger.info("Iniciando la busqueda de un domicilio con id: "+id);
         Connection connection= null;
         Domicilio domicilio= null;
         try{

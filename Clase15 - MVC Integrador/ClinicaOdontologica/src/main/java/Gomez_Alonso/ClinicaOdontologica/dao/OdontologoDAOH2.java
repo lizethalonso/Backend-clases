@@ -12,7 +12,7 @@ import java.util.List;
 
 public class OdontologoDAOH2 implements iDao<Odontologo> {
     private static final Logger logger = Logger.getLogger(OdontologoDAOH2.class);
-    private static final String SQL_INSERT = "INSERT INTO ODONTOLOGOS VALUES (?,?,?)";
+    private static final String SQL_INSERT = "INSERT INTO ODONTOLOGOS(NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES(?,?,?)";
     private static final String SQL_BUSCARTODOS = "SELECT * FROM ODONTOLOGOS";
     private static final String SQL_SELECT_ONE = "SELECT * FROM ODONTOLOGOS WHERE ID = ?";
 
@@ -28,7 +28,7 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
             while (clave.next()){
                 odontologo.setId(clave.getInt(1));
             }
-            logger.info("Odontólogo guardado con éxito: " + odontologo.getApellido());
+            logger.info("Odontólogo guardado con éxito: " + odontologo.toString());
         } catch (Exception e) {
             logger.error("Error al guardar el odontólogo: " + e.getMessage());
         }
@@ -37,7 +37,7 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
 
     @Override
     public Odontologo buscarPorId(Integer id) {
-        logger.info("iniciando la operacion de buscado de un odontologo con id : "+id);
+        logger.info("Iniciando la operacion de buscado de un odontologo con id : "+id);
         Connection connection= null;
         Odontologo odontologo=null;
         try {
@@ -69,18 +69,16 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
 
     @Override
     public List<Odontologo> buscarTodos() {
-
+        logger.info("Inicia operación de búsqueda de todos los odontólogos");
+        Odontologo odontologo = null;
         List<Odontologo> odontologos = new ArrayList<>();
         try {
             Connection connection = BD.getConnection();
-            PreparedStatement psSelectAll = connection.prepareStatement(SQL_BUSCARTODOS);
-            ResultSet rs = psSelectAll.executeQuery();
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery(SQL_BUSCARTODOS);
             while (rs.next()) {
-                Integer id = rs.getInt("id");
-                String numeroMat = rs.getString("NUMERO_MATRICULA");
-                String nombre = rs.getString("NOMBRE");
-                String apellido = rs.getString("APELLIDO");
-                odontologos.add(new Odontologo(id, numeroMat, nombre, apellido));
+                odontologo = (new Odontologo(rs.getString(1),rs.getString(2),rs.getString(3)));
+                odontologos.add(odontologo);
             }
 
         } catch (Exception e) {

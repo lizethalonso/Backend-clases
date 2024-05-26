@@ -18,12 +18,10 @@ public class PacienteDAOH2 implements iDao<Paciente> {
     private static final String SQL_ASSOCIATE="INSERT INTO PACIENTE_ODONTOLOGO (ID_PACIENTE, ID_ODONTOLOGO) VALUES (?,?)";
     @Override
     public Paciente guardar(Paciente paciente) {
-        logger.info("inciando las operaciones de guardado");
+        logger.info("Iniciando las operaciones de guardado de paciente");
         Connection connection= null;
         DomicilioDAOH2 daoAux= new DomicilioDAOH2();
-        OdontologoDAOH2 daoAux2 = new OdontologoDAOH2();
         Domicilio domicilio=  daoAux.guardar(paciente.getDomicilio());
-        Odontologo odontologoAsignado = daoAux2.guardar(paciente.getOdontologoAsignado());
         try{
             connection= BD.getConnection();
             PreparedStatement psInsert= connection.prepareStatement(SQL_INSERT,Statement.RETURN_GENERATED_KEYS);
@@ -33,28 +31,36 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             psInsert.setDate(4, Date.valueOf((paciente.getFechaIngreso())));
             psInsert.setInt(5,domicilio.getId());
             psInsert.setString(6, paciente.getEmail());
-            psInsert.setInt(7, odontologoAsignado.getId());
+            psInsert.setObject(7, paciente.getOdontologoAsignado().getId());
             psInsert.execute();
             ResultSet clave= psInsert.getGeneratedKeys();
         while (clave.next()){
             paciente.setId(clave.getInt(1));
         }
-        logger.info("paciente guardado");
+        logger.info("Paciente guardado con éxito: " + paciente.toString());
 
-        //Obtener el odontólogo asignado al paciente
-        if (odontologoAsignado != null) {
-            if (odontologoAsignado.getId() == null) {
-                odontologoAsignado = daoAux2.guardar(odontologoAsignado);
-            }
-            // Establecer la asociación entre el paciente y el odontólogo
-            asociarPacienteConOdontologo(paciente.getId(), odontologoAsignado.getId());
-        }
-
+        // Establecer la asociación entre el paciente y el odontólogo
+        asociarPacienteConOdontologo(paciente.getId(), paciente.getOdontologoAsignado().getId());
 
         }catch (Exception e){
             logger.error(e.getMessage());
         }
         return paciente;
+    }
+
+    private void asociarPacienteConOdontologo(Integer idPaciente, Integer idOdontologo) {
+        Connection connection= null;
+        try{
+            connection= BD.getConnection();
+            Statement statement= connection.createStatement();
+            PreparedStatement psAsociar = connection.prepareStatement(SQL_ASSOCIATE);
+            psAsociar.setInt(1, idPaciente);
+            psAsociar.setInt(2, idOdontologo);
+            psAsociar.executeUpdate();
+        }
+        catch (Exception e){
+            logger.error(e.getMessage());
+        }
     }
 
     @Override
@@ -77,30 +83,10 @@ public class PacienteDAOH2 implements iDao<Paciente> {
                 odontologo= daoAux2.buscarPorId(rs.getInt(8));
                 paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7),odontologo);
             }
-
-
         }catch (Exception e){
             logger.error(e.getMessage());
         }
-
-
         return paciente;
-    }
-
-    private void asociarPacienteConOdontologo(Integer idPaciente, Integer idOdontologo) {
-        Connection connection= null;
-        try{
-            connection= BD.getConnection();
-            Statement statement= connection.createStatement();
-            PreparedStatement psAsociar = connection.prepareStatement(SQL_ASSOCIATE);
-            psAsociar.setInt(1, idPaciente);
-            psAsociar.setInt(2, idOdontologo);
-            psAsociar.executeUpdate();
-        }
-        catch (Exception e){
-            logger.error(e.getMessage());
-        }
-
     }
 
     @Override
