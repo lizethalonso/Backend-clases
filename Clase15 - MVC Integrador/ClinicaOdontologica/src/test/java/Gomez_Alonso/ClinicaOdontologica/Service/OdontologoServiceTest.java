@@ -1,8 +1,9 @@
 package Gomez_Alonso.ClinicaOdontologica.Service;
 
-import org.example.dao.BD;
-import org.example.model.Odontologo;
-import org.example.service.OdontologoService;
+
+import Gomez_Alonso.ClinicaOdontologica.dao.BD;
+import Gomez_Alonso.ClinicaOdontologica.model.Odontologo;
+import Gomez_Alonso.ClinicaOdontologica.service.OdontologoService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

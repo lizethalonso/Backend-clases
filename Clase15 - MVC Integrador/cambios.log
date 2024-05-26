@@ -1,0 +1,108 @@
+[2024-05-25 17:42:41] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-25 17:42:41] [ INFO ] [OdontologoDAOH2:28] Odontólogo guardado con éxito: Perez
+[2024-05-25 17:42:41] [ INFO ] [OdontologoDAOH2:28] Odontólogo guardado con éxito: Lopez
+[2024-05-25 17:42:41] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 17:42:41] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 17:42:41] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 17:42:41] [ ERROR] [OdontologoDAOH2:30] Error al guardar el odontólogo: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, '12345', 'Juan', 'Perez')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, '12345', 'Juan', 'Perez')"; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?,?) [23505-224]
+[2024-05-25 17:42:41] [ INFO ] [PacienteDAOH2:42] paciente guardado
+[2024-05-25 17:42:41] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 17:42:41] [ ERROR] [OdontologoDAOH2:30] Error al guardar el odontólogo: Cannot invoke "java.lang.Integer.intValue()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" is null
+[2024-05-25 17:42:41] [ INFO ] [OdontologoDAOH2:37] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 17:47:01] [ WARN ] [BD:60] Imposible eliminar "PACIENTES" debido a que "CONSTRAINT_C3" depende de él.
+Cannot drop "PACIENTES" because "CONSTRAINT_C3" depends on it; SQL statement:
+DROP TABLE IF EXISTS PACIENTES [90107-224]
+[2024-05-25 17:47:01] [ ERROR] [OdontologoDAOH2:30] Error al guardar el odontólogo: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:0 */ 1, '12345', 'Juan', 'Perez')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:0 */ 1, '12345', 'Juan', 'Perez')"; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?,?) [23505-224]
+[2024-05-25 17:47:01] [ ERROR] [OdontologoDAOH2:30] Error al guardar el odontólogo: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:0 */ 2, '67890', 'Ana', 'Lopez')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:0 */ 2, '67890', 'Ana', 'Lopez')"; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?,?) [23505-224]
+[2024-05-25 17:47:01] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 17:47:01] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 17:47:01] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 17:47:01] [ ERROR] [OdontologoDAOH2:30] Error al guardar el odontólogo: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, '12345', 'Juan', 'Perez')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, '12345', 'Juan', 'Perez')"; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?,?) [23505-224]
+[2024-05-25 17:47:01] [ INFO ] [PacienteDAOH2:42] paciente guardado
+[2024-05-25 17:47:01] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 17:47:01] [ ERROR] [OdontologoDAOH2:30] Error al guardar el odontólogo: Cannot invoke "java.lang.Integer.intValue()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" is null
+[2024-05-25 17:47:01] [ INFO ] [OdontologoDAOH2:37] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 17:48:19] [ WARN ] [BD:60] Imposible eliminar "PACIENTES" debido a que "CONSTRAINT_C3" depende de él.
+Cannot drop "PACIENTES" because "CONSTRAINT_C3" depends on it; SQL statement:
+DROP TABLE IF EXISTS PACIENTES [90107-224]
+[2024-05-25 17:48:19] [ ERROR] [OdontologoDAOH2:30] Error al guardar el odontólogo: Cannot invoke "java.lang.Integer.intValue()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" is null
+[2024-05-25 17:48:19] [ ERROR] [OdontologoDAOH2:30] Error al guardar el odontólogo: Cannot invoke "java.lang.Integer.intValue()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" is null
+[2024-05-25 17:48:20] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 17:48:20] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 17:48:20] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 17:48:20] [ ERROR] [OdontologoDAOH2:30] Error al guardar el odontólogo: Cannot invoke "java.lang.Integer.intValue()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" is null
+[2024-05-25 17:48:20] [ ERROR] [PacienteDAOH2:55] Cannot invoke "java.lang.Integer.intValue()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" is null
+[2024-05-25 17:48:20] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 17:48:20] [ ERROR] [OdontologoDAOH2:30] Error al guardar el odontólogo: Cannot invoke "java.lang.Integer.intValue()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" is null
+[2024-05-25 17:48:20] [ INFO ] [OdontologoDAOH2:37] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 17:53:41] [ WARN ] [BD:60] Imposible eliminar "PACIENTES" debido a que "CONSTRAINT_C3" depende de él.
+Cannot drop "PACIENTES" because "CONSTRAINT_C3" depends on it; SQL statement:
+DROP TABLE IF EXISTS PACIENTES [90107-224]
+[2024-05-25 17:53:41] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: Parametro "#4" no está fijado
+Parameter "#4" is not set; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?,?) [90012-224]
+[2024-05-25 17:53:41] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: Parametro "#4" no está fijado
+Parameter "#4" is not set; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?,?) [90012-224]
+[2024-05-25 17:53:41] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 17:53:41] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 17:53:41] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 17:53:41] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: Parametro "#4" no está fijado
+Parameter "#4" is not set; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?,?) [90012-224]
+[2024-05-25 17:53:41] [ ERROR] [PacienteDAOH2:55] Cannot invoke "java.lang.Integer.intValue()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" is null
+[2024-05-25 17:53:41] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 17:53:41] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: Parametro "#4" no está fijado
+Parameter "#4" is not set; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?,?) [90012-224]
+[2024-05-25 17:53:41] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 17:54:05] [ WARN ] [BD:60] Imposible eliminar "PACIENTES" debido a que "CONSTRAINT_C3" depende de él.
+Cannot drop "PACIENTES" because "CONSTRAINT_C3" depends on it; SQL statement:
+DROP TABLE IF EXISTS PACIENTES [90107-224]
+[2024-05-25 17:54:05] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 17:54:05] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 17:54:05] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 17:54:05] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 17:54:05] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 17:54:05] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 17:54:05] [ ERROR] [PacienteDAOH2:55] Cannot invoke "java.lang.Integer.intValue()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" is null
+[2024-05-25 17:54:05] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 17:54:05] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 17:54:05] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-25 17:56:35] [ WARN ] [BD:60] Imposible eliminar "PACIENTES" debido a que "CONSTRAINT_C3" depende de él.
+Cannot drop "PACIENTES" because "CONSTRAINT_C3" depends on it; SQL statement:
+DROP TABLE IF EXISTS PACIENTES [90107-224]
+[2024-05-25 17:56:35] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 17:56:35] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 17:56:35] [ INFO ] [PacienteDAOH2:21] inciando las operaciones de guardado
+[2024-05-25 17:56:35] [ INFO ] [DomicilioDAOH2:20] iniciando las operaciones de guardado
+[2024-05-25 17:56:35] [ INFO ] [DomicilioDAOH2:34] domicilio guardado
+[2024-05-25 17:56:35] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 17:56:35] [ ERROR] [PacienteDAOH2:55] Cannot invoke "java.lang.Integer.intValue()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" is null
+[2024-05-25 17:56:35] [ INFO ] [PacienteDAOH2:62] iniciando la operacion de buscado de un paciente con id : 8
+[2024-05-25 17:56:35] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?) [21002-224]
+[2024-05-25 17:56:35] [ INFO ] [OdontologoDAOH2:40] iniciando la operacion de buscado de un odontologo con id : 1

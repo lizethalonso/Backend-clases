@@ -1,6 +1,5 @@
 package Gomez_Alonso.ClinicaOdontologica.controller;
 
-
 import Gomez_Alonso.ClinicaOdontologica.model.Paciente;
 import Gomez_Alonso.ClinicaOdontologica.service.PacienteService;
 import org.springframework.stereotype.Controller;

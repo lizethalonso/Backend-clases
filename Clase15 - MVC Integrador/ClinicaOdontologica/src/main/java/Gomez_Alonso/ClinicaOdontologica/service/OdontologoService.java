@@ -4,6 +4,7 @@ package Gomez_Alonso.ClinicaOdontologica.service;
 import Gomez_Alonso.ClinicaOdontologica.dao.OdontologoDAOH2;
 import Gomez_Alonso.ClinicaOdontologica.dao.iDao;
 import Gomez_Alonso.ClinicaOdontologica.model.Odontologo;
+import Gomez_Alonso.ClinicaOdontologica.model.Paciente;
 
 import java.util.List;
 
@@ -22,6 +23,10 @@ public class OdontologoService {
 
     public List<Odontologo> buscarTodos(){
         return odontologoiDao.buscarTodos();
+    }
+
+    public Odontologo buscarPorID(Integer id) {
+        return odontologoiDao.buscarPorId(id);
     }
 
 }

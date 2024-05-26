@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import java.time.LocalDate;
 
 @Getter
@@ -17,17 +16,19 @@ public class Paciente {
     private LocalDate fechaIngreso;
     private Domicilio domicilio;
     private String email;
+    private Odontologo odontologoAsignado;
 
-    public Paciente(String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email) {
+    public Paciente(String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email, Odontologo odontologoAsignado) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
         this.fechaIngreso = fechaIngreso;
         this.domicilio = domicilio;
-        this.email= email;
+        this.email = email;
+        this.odontologoAsignado = odontologoAsignado;
     }
 
-    public Paciente(Integer id, String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email) {
+    public Paciente(Integer id, String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email, Odontologo odontologoAsignado) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -35,6 +36,7 @@ public class Paciente {
         this.fechaIngreso = fechaIngreso;
         this.domicilio = domicilio;
         this.email= email;
+        this.odontologoAsignado = odontologoAsignado;
     }
 
     @Override
@@ -46,6 +48,12 @@ public class Paciente {
                 ", cedula='" + cedula + '\'' +
                 ", fechaIngreso=" + fechaIngreso +
                 ", domicilio=" + domicilio +
+                ", email='" + email + '\'' +
+                ", odontologo=" + odontologoAsignado +
                 '}';
     }
+
+
+
+
 }

@@ -1,30 +1,33 @@
 package Gomez_Alonso.ClinicaOdontologica.dao;
 
-
 import Gomez_Alonso.ClinicaOdontologica.model.Odontologo;
 import org.apache.log4j.Logger;
-
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 public class OdontologoDAOH2 implements iDao<Odontologo> {
     private static final Logger logger = Logger.getLogger(OdontologoDAOH2.class);
-    private static final String SQL_INSERT = "INSERT INTO ODONTOLOGO VALUES (?,?,?,?)";
-    private static final String SQL_BUSCARTODOS = "SELECT * FROM ODONTOLOGO";
+    private static final String SQL_INSERT = "INSERT INTO ODONTOLOGOS VALUES (?,?,?)";
+    private static final String SQL_BUSCARTODOS = "SELECT * FROM ODONTOLOGOS";
+    private static final String SQL_SELECT_ONE = "SELECT * FROM ODONTOLOGOS WHERE ID = ?";
 
     @Override
     public Odontologo guardar(Odontologo odontologo) {
         try (Connection connection = BD.getConnection();
-             PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT)) {
-            psInsert.setInt(1, odontologo.getId());
-            psInsert.setString(2, odontologo.getNumeroMatricula());
-            psInsert.setString(3, odontologo.getNombre());
-            psInsert.setString(4, odontologo.getApellido());
+             PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT,Statement.RETURN_GENERATED_KEYS)) {
+            psInsert.setString(1, odontologo.getNumeroMatricula());
+            psInsert.setString(2, odontologo.getNombre());
+            psInsert.setString(3, odontologo.getApellido());
             psInsert.executeUpdate();
+            ResultSet clave= psInsert.getGeneratedKeys();
+            while (clave.next()){
+                odontologo.setId(clave.getInt(1));
+            }
             logger.info("Odontólogo guardado con éxito: " + odontologo.getApellido());
         } catch (Exception e) {
             logger.error("Error al guardar el odontólogo: " + e.getMessage());
@@ -34,7 +37,24 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
 
     @Override
     public Odontologo buscarPorId(Integer id) {
-        return null;
+        logger.info("iniciando la operacion de buscado de un odontologo con id : "+id);
+        Connection connection= null;
+        Odontologo odontologo=null;
+        try {
+            connection = BD.getConnection();
+            Statement statement = connection.createStatement();
+            PreparedStatement ps = connection.prepareStatement(SQL_SELECT_ONE);
+            ps.setInt(1,id);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                odontologo = new Odontologo(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4));
+            }
+        }
+        catch (Exception e){
+            logger.error(e.getMessage());
+        }
+
+        return odontologo;
     }
 
     @Override
