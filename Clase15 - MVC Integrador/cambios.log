@@ -441,3 +441,146 @@ Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Poss
 [2024-05-25 23:47:17] [ INFO ] [DomicilioDAOH2:45] Iniciando la busqueda de un domicilio con id: 3
 [2024-05-25 23:47:17] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
 [2024-05-25 23:47:17] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-26 16:36:50] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-26 16:36:50] [ INFO ] [OdontologoDAOH2:31] Odontólogo guardado con éxito: Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}
+[2024-05-26 16:36:50] [ INFO ] [OdontologoDAOH2:72] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-26 16:36:50] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado de paciente
+[2024-05-26 16:36:50] [ INFO ] [DomicilioDAOH2:20] Iniciando las operaciones de guardado de domicilio
+[2024-05-26 16:36:50] [ INFO ] [DomicilioDAOH2:34] Domicilio guardado con éxito
+[2024-05-26 16:36:50] [ INFO ] [PacienteDAOH2:40] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Toro', cedula='111111', fechaIngreso=2024-05-21, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='cali', provincia='Colombia'}, email='luisa@email.com', odontologo=Odontologo{id=1, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}}
+[2024-05-26 16:36:50] [ INFO ] [PacienteDAOH2:68] iniciando la operacion de buscado de un paciente con id : 3
+[2024-05-26 16:36:50] [ INFO ] [DomicilioDAOH2:45] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-26 16:36:50] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-26 16:36:50] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-26 16:42:06] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-26 16:47:41] [ INFO ] [BD:57] tabla creada con exito
+[2024-05-26 16:50:50] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda por email: german@german.com
+[2024-05-26 16:50:50] [ INFO ] [DomicilioDAOH2:45] Iniciando la busqueda de un domicilio con id: 2
+[2024-05-26 16:50:50] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 0
+[2024-05-26 16:51:19] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-26 16:55:23] [ WARN ] [BD:60] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-26 16:55:23] [ ERROR] [OdontologoDAOH2:33] Error al guardar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-26 16:55:23] [ INFO ] [OdontologoDAOH2:72] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-26 16:55:23] [ ERROR] [OdontologoDAOH2:85] Error al listar los odontólogos: La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-26 16:55:23] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de guardado de paciente
+[2024-05-26 16:55:23] [ INFO ] [DomicilioDAOH2:20] Iniciando las operaciones de guardado de domicilio
+[2024-05-26 16:55:23] [ ERROR] [DomicilioDAOH2:37] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-26 16:55:23] [ ERROR] [PacienteDAOH2:46] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-26 16:55:23] [ INFO ] [PacienteDAOH2:68] iniciando la operacion de buscado de un paciente con id : 3
+[2024-05-26 16:55:23] [ ERROR] [PacienteDAOH2:87] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-26 16:55:23] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-26 16:55:23] [ ERROR] [OdontologoDAOH2:54] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-26 17:00:29] [ WARN ] [BD:61] Error de Sintaxis en sentencia SQL "[*]+ INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES ('58895', 'Maria', 'Paz')"
+Syntax error in SQL statement "[*]+ INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES ('58895', 'Maria', 'Paz')"; SQL statement:
++ INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES ('58895', 'Maria', 'Paz') [42000-224]
+[2024-05-26 17:03:51] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-26 17:04:02] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-26 17:05:06] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-26 17:05:11] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-26 17:05:14] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-26 17:21:20] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-26 17:22:13] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-26 17:33:13] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-26 17:33:23] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-26 17:34:00] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-26 17:34:03] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda por email: german@german.com
+[2024-05-26 17:34:03] [ INFO ] [DomicilioDAOH2:45] Iniciando la busqueda de un domicilio con id: 2
+[2024-05-26 17:34:03] [ INFO ] [OdontologoDAOH2:40] Iniciando la operacion de buscado de un odontologo con id : 0
+[2024-05-30 00:16:46] [ WARN ] [BD:61] Columna "MATRICULA" no encontrada
+Column "MATRICULA" not found; SQL statement:
+INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES ('ABC10','RENE','VALENZUELA'), ('ABC20','GINA','ARIAS') [42122-224]
+[2024-05-30 00:18:16] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 00:21:12] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 00:23:50] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 00:27:32] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 00:27:32] [ INFO ] [OdontologoDAOH2:34] Odontólogo guardado con éxito: Odontologo{id=3, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}
+[2024-05-30 00:27:32] [ INFO ] [OdontologoDAOH2:105] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-30 00:27:32] [ WARN ] [PacienteDAOH2:24] Iniciando las operaciones de guardado de paciente: Luisa
+[2024-05-30 00:27:32] [ INFO ] [DomicilioDAOH2:21] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-30 00:27:32] [ INFO ] [DomicilioDAOH2:35] Domicilio guardado con éxito
+[2024-05-30 00:27:32] [ INFO ] [PacienteDAOH2:43] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Toro', cedula='111111', fechaIngreso=2024-05-21, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='cali', provincia='Colombia'}, email='luisa@email.com', odontologo=Odontologo{id=3, numeroMatricula='12457SDF0', nombre='Leopoldo', apellido='Giraldo'}}
+[2024-05-30 00:27:32] [ WARN ] [PacienteDAOH2:55] Iniciando relación de odontólogo con id 3 con paciente con id 3
+[2024-05-30 00:27:32] [ WARN ] [PacienteDAOH2:72] Iniciando la operacion de buscado de un paciente con id : 3
+[2024-05-30 00:27:32] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-30 00:27:32] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 3
+[2024-05-30 00:27:32] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:33:44] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 00:36:09] [ WARN ] [PacienteDAOH2:24] Iniciando las operaciones de guardado de paciente: Julian
+[2024-05-30 00:36:09] [ INFO ] [DomicilioDAOH2:21] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-30 00:36:09] [ INFO ] [DomicilioDAOH2:35] Domicilio guardado con éxito
+[2024-05-30 00:36:09] [ ERROR] [PacienteDAOH2:49] Cannot invoke "Gomez_Alonso.ClinicaOdontologica.model.Odontologo.getId()" because the return value of "Gomez_Alonso.ClinicaOdontologica.model.Paciente.getOdontologoAsignado()" is null
+[2024-05-30 00:37:18] [ INFO ] [PacienteDAOH2:98] Iniciando las operaciones de busqueda:
+[2024-05-30 00:37:18] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 1
+[2024-05-30 00:37:18] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 0
+[2024-05-30 00:37:18] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 2
+[2024-05-30 00:37:18] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 0
+[2024-05-30 00:38:48] [ WARN ] [BD:61] La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES ('Jorgito','Pereyra','111111','2024-05-16', 1,'jorge.pereyra@digitalhouse.com',1), ('German','Fraire','22222','2024-05-10',2,'german@german.com',1); INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay'); INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES ('ABC10','RENE','VALENZUELA'), ('ABC20','GINA','ARIAS') [21002-224]
+[2024-05-30 00:39:36] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 00:39:49] [ INFO ] [PacienteDAOH2:98] Iniciando las operaciones de busqueda:
+[2024-05-30 00:39:49] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 1
+[2024-05-30 00:39:49] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:39:49] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 2
+[2024-05-30 00:39:49] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:47:24] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 00:48:31] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 00:48:38] [ WARN ] [PacienteDAOH2:72] Iniciando la operacion de buscado de un paciente con id : 1
+[2024-05-30 00:48:38] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 1
+[2024-05-30 00:48:38] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:49:51] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 00:49:57] [ WARN ] [PacienteDAOH2:72] Iniciando la operacion de buscado de un paciente con id : 1
+[2024-05-30 00:49:57] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 1
+[2024-05-30 00:49:57] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:49:59] [ WARN ] [PacienteDAOH2:72] Iniciando la operacion de buscado de un paciente con id : 1
+[2024-05-30 00:49:59] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 1
+[2024-05-30 00:49:59] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:53:29] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 00:54:51] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 00:56:00] [ INFO ] [PacienteDAOH2:124] Iniciando la busqueda por email: german@german.com
+[2024-05-30 00:56:00] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 2
+[2024-05-30 00:56:00] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:56:14] [ INFO ] [PacienteDAOH2:98] Iniciando las operaciones de busqueda:
+[2024-05-30 00:56:14] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 1
+[2024-05-30 00:56:14] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:56:14] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 2
+[2024-05-30 00:56:14] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:57:30] [ WARN ] [PacienteDAOH2:72] Iniciando la operacion de buscado de un paciente con id : 1
+[2024-05-30 00:57:30] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 1
+[2024-05-30 00:57:30] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:57:30] [ WARN ] [PacienteDAOH2:152] Iniciando las operaciones de actualizacion de paciente con id : 1
+[2024-05-30 00:57:30] [ INFO ] [DomicilioDAOH2:71] iniciando la actualizacion del domicilio con id: 1
+[2024-05-30 00:57:30] [ ERROR] [PacienteDAOH2:170] Error de Sintaxis en sentencia SQL "UPDATE PACIENTES SET NOMBRE=?, APELLIDO=?, CEDULA=?, FECHA_INGRESO=?, DOMICILIO_ID=?, EMAIL=?, ODONTOLOGO_ID [*]WHERE ID=?"; se esperaba "., [, ="
+Syntax error in SQL statement "UPDATE PACIENTES SET NOMBRE=?, APELLIDO=?, CEDULA=?, FECHA_INGRESO=?, DOMICILIO_ID=?, EMAIL=?, ODONTOLOGO_ID [*]WHERE ID=?"; expected "., [, ="; SQL statement:
+UPDATE PACIENTES SET NOMBRE=?, APELLIDO=?, CEDULA=?, FECHA_INGRESO=?, DOMICILIO_ID=?, EMAIL=?, ODONTOLOGO_ID WHERE ID=? [42001-224]
+[2024-05-30 00:57:35] [ INFO ] [PacienteDAOH2:98] Iniciando las operaciones de busqueda:
+[2024-05-30 00:57:35] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 1
+[2024-05-30 00:57:35] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:57:35] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 2
+[2024-05-30 00:57:35] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:58:47] [ WARN ] [PacienteDAOH2:72] Iniciando la operacion de buscado de un paciente con id : 1
+[2024-05-30 00:58:47] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 1
+[2024-05-30 00:58:47] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 00:58:47] [ WARN ] [PacienteDAOH2:152] Iniciando las operaciones de actualizacion de paciente con id : 1
+[2024-05-30 00:58:47] [ INFO ] [DomicilioDAOH2:71] iniciando la actualizacion del domicilio con id: 1
+[2024-05-30 00:58:47] [ ERROR] [PacienteDAOH2:170] Error de Sintaxis en sentencia SQL "UPDATE PACIENTES SET NOMBRE=?, APELLIDO=?, CEDULA=?, FECHA_INGRESO=?, DOMICILIO_ID=?, EMAIL=?, ODONTOLOGO_ID [*]WHERE ID=?"; se esperaba "., [, ="
+Syntax error in SQL statement "UPDATE PACIENTES SET NOMBRE=?, APELLIDO=?, CEDULA=?, FECHA_INGRESO=?, DOMICILIO_ID=?, EMAIL=?, ODONTOLOGO_ID [*]WHERE ID=?"; expected "., [, ="; SQL statement:
+UPDATE PACIENTES SET NOMBRE=?, APELLIDO=?, CEDULA=?, FECHA_INGRESO=?, DOMICILIO_ID=?, EMAIL=?, ODONTOLOGO_ID WHERE ID=? [42001-224]
+[2024-05-30 00:59:42] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 01:00:04] [ WARN ] [PacienteDAOH2:72] Iniciando la operacion de buscado de un paciente con id : 1
+[2024-05-30 01:00:04] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 1
+[2024-05-30 01:00:04] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 01:00:04] [ WARN ] [PacienteDAOH2:152] Iniciando las operaciones de actualizacion de paciente con id : 1
+[2024-05-30 01:00:04] [ INFO ] [DomicilioDAOH2:71] iniciando la actualizacion del domicilio con id: 1
+[2024-05-30 01:00:07] [ INFO ] [PacienteDAOH2:98] Iniciando las operaciones de busqueda:
+[2024-05-30 01:00:07] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 1
+[2024-05-30 01:00:07] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-30 01:00:07] [ INFO ] [DomicilioDAOH2:46] Iniciando la busqueda de un domicilio con id: 2
+[2024-05-30 01:00:07] [ INFO ] [OdontologoDAOH2:43] Iniciando la operacion de buscado de un odontologo con id : 1

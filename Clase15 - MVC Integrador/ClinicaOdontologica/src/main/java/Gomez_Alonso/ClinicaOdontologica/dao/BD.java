@@ -30,15 +30,16 @@ public class BD {
     private static final String SQL_DROP_CREATE_ODON="DROP TABLE IF EXISTS ODONTOLOGOS; CREATE TABLE ODONTOLOGOS (" +
             "ID INT AUTO_INCREMENT PRIMARY KEY, " +
             "NUMERO_MATRICULA VARCHAR (100) NOT NULL, " +
-            "NOMBRE VARCHAR(100) NOT NULL, A" +
-            "PELLIDO VARCHAR(100) NOT NULL)";
+            "NOMBRE VARCHAR(100) NOT NULL, " +
+            "APELLIDO VARCHAR(100) NOT NULL)";
     private static final String SQL_DROP_CREATE_PAC_ODON="DROP TABLE IF EXISTS PACIENTE_ODONTOLOGO; CREATE TABLE PACIENTE_ODONTOLOGO (" +
             "ID_PACIENTE INT NOT NULL," +
             "ID_ODONTOLOGO INT NOT NULL, " +
             "FOREIGN KEY (ID_PACIENTE) REFERENCES PACIENTES(ID)," +
             "FOREIGN KEY (ID_ODONTOLOGO) REFERENCES ODONTOLOGOS(ID))";
-    private static final String SQL_PRUEBA="INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES ('Jorgito','Pereyra','111111','2024-05-16', 1,'jorge.pereyra@digitalhouse.com'), ('German','Fraire','22222','2024-05-10',2,'german@german.com'); " +
-            "INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay')";
+    private static final String SQL_PRUEBA="INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL,ODONTOLOGO_ID) VALUES ('Jorgito','Pereyra','111111','2024-05-16', 1,'jorge.pereyra@digitalhouse.com',1), ('German','Fraire','22222','2024-05-10',2,'german@german.com',1); " +
+            "INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay');"+
+            " INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES ('ABC10','RENE','VALENZUELA'), ('ABC20','GINA','ARIAS')";
 
 public static void crearTablas(){
     Connection connection= null;
@@ -49,9 +50,9 @@ public static void crearTablas(){
         statement.execute(SQL_DROP_RELACION);
         statement.execute(SQL_DROP_CREATE_DOM);
         statement.execute(SQL_DROP_CREATE_PAC);
-        statement.execute(SQL_PRUEBA);
         statement.execute(SQL_DROP_CREATE_ODON);
         statement.execute(SQL_DROP_CREATE_PAC_ODON);
+        statement.execute(SQL_PRUEBA);
 
         //statement.execute(SQL_PRUEBA2);
         logger.info("tabla creada con exito");

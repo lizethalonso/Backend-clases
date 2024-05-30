@@ -39,6 +39,9 @@ public class Paciente {
         this.odontologoAsignado = odontologoAsignado;
     }
 
+    public Paciente() {
+    }
+
     @Override
     public String toString() {
         return "Paciente{" +

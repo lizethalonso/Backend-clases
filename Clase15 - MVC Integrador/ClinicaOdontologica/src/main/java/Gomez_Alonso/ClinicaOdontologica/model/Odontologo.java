@@ -19,6 +19,9 @@ public class Odontologo {
         this.apellido = apellido;
     }
 
+    public Odontologo() {
+    }
+
     public void setId(Integer id) {
         this.id = id;
     }

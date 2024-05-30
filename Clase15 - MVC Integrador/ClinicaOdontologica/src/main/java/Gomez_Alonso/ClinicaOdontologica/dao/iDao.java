@@ -11,5 +11,4 @@ public interface iDao<T> {
 
     List<T> buscarTodos();
     T buscarPorString(String string);
-
 }
