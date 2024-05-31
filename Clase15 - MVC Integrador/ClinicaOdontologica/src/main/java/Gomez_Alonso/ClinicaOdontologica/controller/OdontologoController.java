@@ -2,14 +2,12 @@ package Gomez_Alonso.ClinicaOdontologica.controller;
 
 import Gomez_Alonso.ClinicaOdontologica.model.Odontologo;
 import Gomez_Alonso.ClinicaOdontologica.service.OdontologoService;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
-@RequestMapping("/odontologo")
+import java.util.List;
+
+@RestController
+@RequestMapping("/odontologos")
 public class OdontologoController {
     private OdontologoService odontologoService;
 
@@ -28,5 +26,40 @@ public class OdontologoController {
         return "index";
     }*/
 
+    @PostMapping //--> nos permite persistir los datos que vienen desde la vista
+    public Odontologo guardarOdontologo(@RequestBody Odontologo odontologo){
+        return odontologoService.guardarOdontologo(odontologo);
+    }
 
-}
+    @GetMapping("/{id}")
+    public Odontologo buscarPorOdontologo(@PathVariable Integer id){
+        return odontologoService.buscarPorID(id);
+    }
+
+    @GetMapping
+    public List<Odontologo> buscarTodos(){
+        return odontologoService.buscarTodos();
+    }
+
+    @GetMapping("/matricula")
+    public Odontologo buscarPorMatricula(@RequestParam String matricula){
+        return odontologoService.buscarPorMatricula(matricula);
+    }
+
+    @PutMapping
+    public String actualizarOdontologo(@RequestBody Odontologo odontologo){
+        Odontologo odontologoBuscado= odontologoService.buscarPorID(odontologo.getId());
+        if(odontologoBuscado!=null){
+            odontologoService.actualizarOdontologo(odontologo);
+            return "Odontólogo actualizado con éxito";
+        }else{
+            return "Odontólogo no encontrado";
+        }
+    }
+
+    @DeleteMapping("/eliminar/{id}")
+    public void eliminarOdontologo(@PathVariable Integer id){
+        odontologoService.eliminarOdontologo(id);
+    }
+
+    }

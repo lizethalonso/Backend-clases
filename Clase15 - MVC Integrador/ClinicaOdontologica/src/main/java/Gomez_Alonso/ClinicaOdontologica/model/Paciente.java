@@ -1,8 +1,6 @@
 package Gomez_Alonso.ClinicaOdontologica.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import java.time.LocalDate;
 
@@ -16,19 +14,20 @@ public class Paciente {
     private LocalDate fechaIngreso;
     private Domicilio domicilio;
     private String email;
+    private Integer odontologoAsignadoId;
     private Odontologo odontologoAsignado;
 
-    public Paciente(String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email, Odontologo odontologoAsignado) {
+    public Paciente(String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email, Integer odontologoAsignadoId) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
         this.fechaIngreso = fechaIngreso;
         this.domicilio = domicilio;
         this.email = email;
-        this.odontologoAsignado = odontologoAsignado;
+        this.odontologoAsignadoId = odontologoAsignadoId;
     }
 
-    public Paciente(Integer id, String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email, Odontologo odontologoAsignado) {
+    public Paciente(Integer id, String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email, Integer odontologoAsignadoId) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -36,7 +35,7 @@ public class Paciente {
         this.fechaIngreso = fechaIngreso;
         this.domicilio = domicilio;
         this.email= email;
-        this.odontologoAsignado = odontologoAsignado;
+        this.odontologoAsignadoId = odontologoAsignadoId;
     }
 
     public Paciente() {

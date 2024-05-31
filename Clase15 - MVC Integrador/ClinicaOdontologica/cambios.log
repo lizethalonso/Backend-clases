@@ -1,0 +1,22 @@
+[2024-05-30 19:01:25] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 19:01:25] [ INFO ] [OdontologoDAOH2:37] Odontologo agregado a la lista nueva 
+[2024-05-30 19:01:25] [ INFO ] [OdontologoDAOH2:38] Odontólogo guardado con éxito en la base de datos: Odontologo{id=3, numeroMatricula='12345', nombre='Juan', apellido='Perez'}
+[2024-05-30 19:01:25] [ INFO ] [OdontologoDAOH2:37] Odontologo agregado a la lista nueva 
+[2024-05-30 19:01:25] [ INFO ] [OdontologoDAOH2:38] Odontólogo guardado con éxito en la base de datos: Odontologo{id=4, numeroMatricula='67890', nombre='Ana', apellido='Lopez'}
+[2024-05-30 19:01:25] [ INFO ] [OdontologoDAOH2:110] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-30 19:01:52] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 19:01:52] [ INFO ] [OdontologoDAOH2:37] Odontologo agregado a la lista nueva 
+[2024-05-30 19:01:52] [ INFO ] [OdontologoDAOH2:38] Odontólogo guardado con éxito en la base de datos: Odontologo{id=3, numeroMatricula='12345', nombre='Juan', apellido='Perez'}
+[2024-05-30 19:01:52] [ INFO ] [OdontologoDAOH2:37] Odontologo agregado a la lista nueva 
+[2024-05-30 19:01:52] [ INFO ] [OdontologoDAOH2:38] Odontólogo guardado con éxito en la base de datos: Odontologo{id=4, numeroMatricula='67890', nombre='Ana', apellido='Lopez'}
+[2024-05-30 19:01:52] [ INFO ] [OdontologoDAOH2:110] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-30 19:02:52] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 19:02:52] [ INFO ] [OdontologoDAOH2:37] Odontologo agregado a la lista nueva 
+[2024-05-30 19:02:52] [ INFO ] [OdontologoDAOH2:38] Odontólogo guardado con éxito en la base de datos: Odontologo{id=3, numeroMatricula='12345', nombre='Juan', apellido='Perez'}
+[2024-05-30 19:02:52] [ INFO ] [OdontologoDAOH2:37] Odontologo agregado a la lista nueva 
+[2024-05-30 19:02:52] [ INFO ] [OdontologoDAOH2:38] Odontólogo guardado con éxito en la base de datos: Odontologo{id=4, numeroMatricula='67890', nombre='Ana', apellido='Lopez'}
+[2024-05-30 19:02:52] [ INFO ] [OdontologoDAOH2:110] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-30 19:04:49] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 19:04:49] [ INFO ] [OdontologoDAOH2:110] Inicia operación de búsqueda de todos los odontólogos
+[2024-05-30 20:00:08] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-30 20:00:08] [ INFO ] [OdontologoDAOH2:110] Inicia operación de búsqueda de todos los odontólogos

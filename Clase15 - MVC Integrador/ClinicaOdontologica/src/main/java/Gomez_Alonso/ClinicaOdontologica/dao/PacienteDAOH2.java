@@ -23,7 +23,9 @@ public class PacienteDAOH2 implements iDao<Paciente> {
     public Paciente guardar(Paciente paciente) {
         logger.warn("Iniciando las operaciones de guardado de paciente: " + paciente.getNombre());
         Connection connection= null;
+        Odontologo odontologo=null;
         DomicilioDAOH2 daoAux= new DomicilioDAOH2();
+        OdontologoDAOH2 daoAux2= new OdontologoDAOH2();
         Domicilio domicilio=  daoAux.guardar(paciente.getDomicilio());
         try{
             connection= BD.getConnection();
@@ -34,8 +36,10 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             psInsert.setDate(4, Date.valueOf((paciente.getFechaIngreso())));
             psInsert.setInt(5,domicilio.getId());
             psInsert.setString(6, paciente.getEmail());
-            psInsert.setObject(7, paciente.getOdontologoAsignado().getId());
+            psInsert.setInt(7, paciente.getOdontologoAsignadoId());
             psInsert.execute();
+            odontologo= daoAux2.buscarPorId(paciente.getOdontologoAsignadoId());
+            paciente.setOdontologoAsignado(odontologo);
             ResultSet clave= psInsert.getGeneratedKeys();
         while (clave.next()){
             paciente.setId(clave.getInt(1));
@@ -43,7 +47,7 @@ public class PacienteDAOH2 implements iDao<Paciente> {
         logger.info("Paciente guardado con éxito: " + paciente.toString());
 
         // Establecer la asociación entre el paciente y el odontólogo
-        asociarPacienteConOdontologo(paciente.getId(), paciente.getOdontologoAsignado().getId());
+        asociarPacienteConOdontologo(paciente.getId(), paciente.getOdontologoAsignadoId());
 
         }catch (Exception e){
             logger.error(e.getMessage());
@@ -85,7 +89,8 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             while(rs.next()){
                 domicilio= daoAux.buscarPorId(rs.getInt(6));
                 odontologo= daoAux2.buscarPorId(rs.getInt(8));
-                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7),odontologo);
+                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), rs.getInt(8));
+                paciente.setOdontologoAsignado(odontologo);
             }
         }catch (Exception e){
             logger.error(e.getMessage());
@@ -110,7 +115,7 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             while(rs.next()){
                 domicilio= daoAux.buscarPorId(rs.getInt(6));
                 odontologo= daoAux2.buscarPorId(rs.getInt(8));
-                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3), rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7),odontologo);
+                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3), rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), rs.getInt(8));
                 pacientes.add(paciente);
             }
         }catch (Exception e){
@@ -136,7 +141,7 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             while(rs.next()){
                 domicilio= daoAux.buscarPorId(rs.getInt(6));
                 odontologo= daoAux2.buscarPorId(rs.getInt(8));
-                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7),odontologo);
+                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), rs.getInt(8));
 
             }
 
@@ -162,7 +167,7 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             psUpdate.setDate(4,Date.valueOf(paciente.getFechaIngreso()));
             psUpdate.setInt(5,paciente.getDomicilio().getId());
             psUpdate.setString(6, paciente.getEmail());
-            psUpdate.setObject(7,paciente.getOdontologoAsignado().getId());
+            psUpdate.setInt(7,paciente.getOdontologoAsignadoId());
             psUpdate.setInt(8,paciente.getId());
             psUpdate.execute();
 

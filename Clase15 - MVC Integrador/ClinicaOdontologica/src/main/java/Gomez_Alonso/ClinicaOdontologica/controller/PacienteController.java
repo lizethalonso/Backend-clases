@@ -2,6 +2,7 @@ package Gomez_Alonso.ClinicaOdontologica.controller;
 
 import Gomez_Alonso.ClinicaOdontologica.model.Paciente;
 import Gomez_Alonso.ClinicaOdontologica.service.PacienteService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -39,8 +40,13 @@ public class PacienteController {
     }
 
     @GetMapping
-    public List<Paciente> buscarTodos(){
-        return pacienteService.buscarTodos();
+    public ResponseEntity<List<Paciente>> buscarTodos(){
+        List<Paciente> pacientes = pacienteService.buscarTodos();
+        if (!pacientes.isEmpty()) {
+            return ResponseEntity.ok(pacientes);
+        } else {
+            return ResponseEntity.noContent().build();
+        }
     }
 
     @GetMapping("/email")
