@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DomicilioDAOH2 implements iDao<Domicilio>{
@@ -15,6 +16,8 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
     private static final String SQL_SELECT_ONE="SELECT * FROM DOMICILIOS WHERE ID=?";
     private static final String SQL_INSERT="INSERT INTO DOMICILIOS (CALLE, NUMERO,LOCALIDAD, PROVINCIA) VALUES(?,?,?,?)";
     private static final String SQL_UPDATE="UPDATE  DOMICILIOS SET CALLE=?,NUMERO=?, LOCALIDAD=?, PROVINCIA =? WHERE ID=?";
+    private static final String SQL_DELETE = "DELETE FROM DOMICILIOS WHERE ID=?";
+    private static final String SQL_SELECT_ALL = "SELECT * FROM DOMICILIOS";
 
     @Override
     public Domicilio guardar(Domicilio domicilio) {
@@ -63,7 +66,19 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
 
     @Override
     public void eliminar(Integer id) {
-
+        logger.warn("Iniciando operación de eliminación de domicilio con id: " + id);
+        try (Connection connection = BD.getConnection();
+             PreparedStatement psDelete = connection.prepareStatement(SQL_DELETE)) {
+            psDelete.setInt(1, id);
+            int filasAfectadas = psDelete.executeUpdate();
+            if (filasAfectadas == 0) {
+                logger.error("No se encontró ningún domicilio con id: " + id);
+            } else {
+                logger.info("Domicilio con id " + id + " eliminado correctamente.");
+            }
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+        }
     }
 
     @Override
@@ -81,14 +96,26 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
             psUpdate.execute();
 
         }catch (Exception e){
-            logger.error(e.getMessage());
+            logger.error("Error al actualizar el domicilio con ID " + domicilio.getId() + ": " + e.getMessage());
         }
 
     }
 
     @Override
     public List<Domicilio> buscarTodos() {
-        return null;
+        logger.info("Iniciando las operaciones de busqueda de domicilios");
+        List<Domicilio> domicilios = new ArrayList<>();
+        try (Connection connection = BD.getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet rs = statement.executeQuery(SQL_SELECT_ALL)) {
+            while (rs.next()) {
+                Domicilio domicilio = new Domicilio(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getString(4), rs.getString(5));
+                domicilios.add(domicilio);
+            }
+        } catch (Exception e) {
+            logger.error("Error al listar los domicilios: " + e.getMessage());
+        }
+        return domicilios;
     }
 
     @Override
