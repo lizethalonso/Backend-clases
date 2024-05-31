@@ -1,9 +1,12 @@
 package Gomez_Alonso.ClinicaOdontologica.dao;
 
+import Gomez_Alonso.ClinicaOdontologica.dao.BD;
 import Gomez_Alonso.ClinicaOdontologica.model.Domicilio;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.sql.Connection;
 import java.util.List;
 
 class DomicilioDAOH2Test {
@@ -11,22 +14,24 @@ class DomicilioDAOH2Test {
 
     @Test
     void testGuardar() {
-        Domicilio expected = new Domicilio(37, "calle", 0, "localidad", "provincia");
+        BD.crearTablas();
+        Domicilio expected = new Domicilio("calle", 0, "localidad", "provincia");
         Domicilio result = domicilioDAOH2.guardar(expected);
-
         // Comparar atributos individualmente
-        Assertions.assertNotNull(result);
-        Assertions.assertEquals(expected.getId(), result.getId());
-        Assertions.assertEquals(expected.getCalle(), result.getCalle());
-        Assertions.assertEquals(expected.getNumero(), result.getNumero());
-        Assertions.assertEquals(expected.getLocalidad(), result.getLocalidad());
-        Assertions.assertEquals(expected.getProvincia(), result.getProvincia());
+        Assertions.assertNotNull(result, "El resultado de guardar no debería ser nulo");
+        Assertions.assertEquals(expected.getId(), result.getId(), "El id del domicilio no coincide");
+        Assertions.assertEquals(expected.getCalle(), result.getCalle(), "La calle del domicilio no coincide");
+        Assertions.assertEquals(expected.getNumero(), result.getNumero(), "El número del domicilio no coincide");
+        Assertions.assertEquals(expected.getLocalidad(), result.getLocalidad(), "La localidad del domicilio no coincide");
+        Assertions.assertEquals(expected.getProvincia(), result.getProvincia(), "La provincia del domicilio no coincide");
     }
 
     @Test
     void testBuscarPorId() {
-        Domicilio expected = new Domicilio(37, "calle", 0, "localidad", "provincia");
-        Domicilio result = domicilioDAOH2.buscarPorId(37);
+        BD.crearTablas();
+        Domicilio expected = new Domicilio("calle", 2, "localidad", "provincia");
+        domicilioDAOH2.guardar(expected);
+        Domicilio result = domicilioDAOH2.buscarPorId(3);
 
         // Comparar atributos individualmente
         Assertions.assertNotNull(result);
@@ -39,11 +44,15 @@ class DomicilioDAOH2Test {
 
     @Test
     void testEliminar() {
-        int id = 37;
-
+        int id = 3;
         // Agregar un domicilio para la prueba
-        Domicilio domicilio = new Domicilio(id, "calle", 0, "localidad", "provincia");
-        domicilioDAOH2.guardar(domicilio);
+        //Domicilio domicilio = new Domicilio( "calle", 0, "localidad", "provincia");
+        //domicilioDAOH2.guardar(domicilio);
+        
+        // En guardar y buscar por id limpiaba la bd porq en ambas necesitaba guardar la dirección
+        // y en buscar por id necesitaba tener esa en la bd, aquí como ya tenemos guardadas las
+        // dos que vienen por defecto más la q sse agrega o en guardar o en buscarpor id, sólo
+        // se necesita decirle q id borrar sin guardar una nueva.
 
         // Verificar que el domicilio existe antes de eliminarlo
         Domicilio domicilioExistente = domicilioDAOH2.buscarPorId(id);

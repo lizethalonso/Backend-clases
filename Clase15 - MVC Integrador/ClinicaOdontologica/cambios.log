@@ -159,3 +159,103 @@ Database may be already in use: "C:/Users/Asus/clinicaOdontologica.mv.db". Possi
 [2024-05-31 12:49:17] [ INFO ] [DomicilioDAOH2:106] Iniciando las operaciones de busqueda de domicilios
 [2024-05-31 12:49:54] [ INFO ] [DomicilioDAOH2:106] Iniciando las operaciones de busqueda de domicilios
 [2024-05-31 12:50:30] [ INFO ] [DomicilioDAOH2:106] Iniciando las operaciones de busqueda de domicilios
+[2024-05-31 16:29:05] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 16:29:05] [ WARN ] [PacienteDAOH2:76] Iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-31 16:29:05] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 2
+[2024-05-31 16:29:05] [ INFO ] [OdontologoDAOH2:50] Iniciando la operacion de buscado de un odontologo con id : 1
+[2024-05-31 16:37:45] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: 37
+[2024-05-31 16:37:45] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:10:59] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 37
+[2024-05-31 17:14:28] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 37
+[2024-05-31 17:26:21] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:26:21] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: 37
+[2024-05-31 17:26:21] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:26:34] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:26:34] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: 37
+[2024-05-31 17:26:34] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:26:53] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:26:53] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 37
+[2024-05-31 17:27:43] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:27:43] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: 37
+[2024-05-31 17:27:43] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:27:53] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 37
+[2024-05-31 17:29:26] [ WARN ] [BD:61] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-31 17:29:26] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:29:26] [ ERROR] [DomicilioDAOH2:41] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-31 17:29:43] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:29:43] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:29:43] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:29:51] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 17:35:28] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 17:36:07] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:36:07] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 17:45:39] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:45:39] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 17:50:46] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:50:47] [ ERROR] [DomicilioDAOH2:41] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-31 17:50:47] [ WARN ] [BD:61] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-31 17:52:16] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:86] iniciando la actualizacion del domicilio con id: 0
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:52:17] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:52:17] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: 37
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 37
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:52:17] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:52:25] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:52:26] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:52:26] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:56:00] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:56:00] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:56:00] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:56:39] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:56:39] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:56:39] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:56:39] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 17:57:29] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 17:57:29] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 17:57:29] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 17:57:29] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 18:02:07] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 18:02:07] [ ERROR] [DomicilioDAOH2:41] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-31 18:02:07] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 18:02:07] [ ERROR] [DomicilioDAOH2:62] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-31 18:02:44] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 18:02:45] [ ERROR] [DomicilioDAOH2:41] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-31 18:02:45] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 18:02:45] [ ERROR] [DomicilioDAOH2:62] La base de datos puede que ya esté siendo utilizada: "C:/Users/lizet/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-31 18:03:23] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 18:03:24] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 18:03:24] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 18:03:50] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 18:03:50] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 18:03:50] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 18:03:50] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 18:07:13] [ INFO ] [BD:58] tabla creada con exito
+[2024-05-31 18:07:13] [ INFO ] [DomicilioDAOH2:24] iniciando las operaciones de guardado de un domicilio con id: null
+[2024-05-31 18:07:13] [ INFO ] [DomicilioDAOH2:38] Domicilio guardado con éxito
+[2024-05-31 18:07:13] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 18:08:32] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 18:08:32] [ WARN ] [DomicilioDAOH2:69] Iniciando operación de eliminación de domicilio con id: 3
+[2024-05-31 18:08:32] [ INFO ] [DomicilioDAOH2:77] Domicilio con id 3 eliminado correctamente.
+[2024-05-31 18:08:32] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 18:10:04] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3

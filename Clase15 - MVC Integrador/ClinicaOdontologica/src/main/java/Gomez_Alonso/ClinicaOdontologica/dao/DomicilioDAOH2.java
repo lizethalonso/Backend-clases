@@ -122,4 +122,6 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
     public Domicilio buscarPorString(String string) {
         return null;
     }
+
+
 }
