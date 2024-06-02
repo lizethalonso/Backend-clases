@@ -37,9 +37,9 @@ public class BD {
             "ID_ODONTOLOGO INT NOT NULL, " +
             "FOREIGN KEY (ID_PACIENTE) REFERENCES PACIENTES(ID)," +
             "FOREIGN KEY (ID_ODONTOLOGO) REFERENCES ODONTOLOGOS(ID))";
-    private static final String SQL_PRUEBA="INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL,ODONTOLOGO_ID) VALUES ('Jorgito','Pereyra','111111','2024-05-16', 1,'jorge.pereyra@digitalhouse.com',1), ('German','Fraire','22222','2024-05-10',2,'german@german.com',1); " +
-            "INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay');"+
-            " INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES ('ABC10','RENE','VALENZUELA'), ('ABC20','GINA','ARIAS')";
+    private static final String SQL_PRUEBA= "INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES ('ABC10','Rene','Valenzuela'), ('ABC20','Gina','Arias');" +
+            "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL,ODONTOLOGO_ID) VALUES ('Jorgito','Pereyra','111111','2024-05-16', 1,'jorge.pereyra@digitalhouse.com',1), ('German','Fraire','22222','2024-05-10',2,'german@german.com',1);" +
+            "INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay')";
 
 public static void crearTablas(){
     Connection connection= null;

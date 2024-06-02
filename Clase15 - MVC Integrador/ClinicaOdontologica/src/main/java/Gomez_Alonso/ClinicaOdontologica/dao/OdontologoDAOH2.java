@@ -17,8 +17,7 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
     private static final String SQL_SELECT_ALL = "SELECT * FROM ODONTOLOGOS";
     private static final String SQL_SELECT_ONE = "SELECT * FROM ODONTOLOGOS WHERE ID = ?";
     private static final String SQL_UPDATE="UPDATE ODONTOLOGOS SET NUMERO_MATRICULA=?, NOMBRE=?, APELLIDO=? WHERE ID=?";
-    private static final String SQL_DELETE="DELETE FROM ODONTOLOGOS WHERE ID?";
-    private static final String SQL_SELECT_BY_MATRICULA="SELECT * FROM ODONTOLOGOS WHERE NUMERO_MATRICULA=?";
+    private static final String SQL_DELETE="DELETE FROM ODONTOLOGOS WHERE ID=?";
 
     @Override
     public Odontologo guardar(Odontologo odontologo) {
@@ -34,8 +33,8 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
              while (clave.next()){
                  odontologo.setId(clave.getInt(1));
              }
-             //listaOdontologosCollection.add(odontologo);
-             //logger.info("Odontologo agregado a la lista nueva ");
+             listaOdontologosCollection.add(odontologo);
+             logger.info("Odontologo agregado a la lista odontologo collection no bd ");
             System.out.println("Odontologo guardado: "+odontologo.getId() + " " + odontologo.getNumeroMatricula() + " " + odontologo.getNombre()+ " " + odontologo.getApellido());
              logger.info("Odontólogo guardado con éxito en la base de datos: " + odontologo.toString());
 
@@ -67,47 +66,6 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
     }
 
     @Override
-    public void eliminar(Integer id) {
-        logger.info("Iniciando operación de eliminación de paciente con id: " + id);
-        Connection connection=null;
-        try {
-            connection=BD.getConnection();
-            connection.setAutoCommit(false);
-            Statement statement = connection.createStatement();
-            PreparedStatement psDelete = connection.prepareStatement(SQL_DELETE);
-            psDelete.setInt(1, id);
-            int filasAfectadas = psDelete.executeUpdate();
-            if (filasAfectadas == 0){
-                logger.error("No se encontró ningún odontólogo con id: " + id);
-            }else {
-                connection.commit();
-                logger.info("Odontólogo con id " + id + " eliminado correctamente.");
-            }
-        }
-        catch (Exception e){
-            logger.error(e.getMessage());
-        }
-    }
-
-    @Override
-    public void actualizar(Odontologo odontologo) {
-        logger.warn("Iniciando operaciones de actualización de odontólogo con id: " + odontologo.getId());
-        Connection connection = null;
-        try {
-            connection=BD.getConnection();
-            Statement statement = connection.createStatement();
-            PreparedStatement psUpdate = connection.prepareStatement(SQL_UPDATE);
-            psUpdate.setString(1, odontologo.getNumeroMatricula());
-            psUpdate.setString(2,odontologo.getNombre());
-            psUpdate.setString(3,odontologo.getApellido());
-            psUpdate.setInt(4,odontologo.getId());
-            psUpdate.execute();
-        }catch (Exception e){
-            logger.error(e.getMessage());
-        }
-    }
-
-    @Override
     public List<Odontologo> buscarTodos() {
         logger.info("Inicia operación de búsqueda de todos los odontólogos");
         Odontologo odontologo = null;
@@ -132,16 +90,15 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
     }
 
     @Override
-    public Odontologo buscarPorString(String string) {
-        logger.info("iniciando las operaciones de: ");
+    public Odontologo buscarPorString(String campo, String valor) {
+        logger.info("iniciando las operaciones de búsqueda por: " + campo);
+        String SQL_SELECT_BY_STRING="SELECT * FROM ODONTOLOGOS WHERE " + campo  + " = ?";
         Connection connection = null;
         Odontologo odontologo = null;
-        OdontologoDAOH2 odontologoDAOH2 = new OdontologoDAOH2();
         try{
             connection= BD.getConnection();
-            Statement statement = connection.createStatement();
-            PreparedStatement psSelectM = connection.prepareStatement(SQL_SELECT_BY_MATRICULA);
-            psSelectM.setString(1,string);
+            PreparedStatement psSelectM = connection.prepareStatement(SQL_SELECT_BY_STRING);
+            psSelectM.setString(1,valor);
             ResultSet rs = psSelectM.executeQuery();
             while (rs.next()){
                 odontologo = new Odontologo(rs.getInt(1),rs.getString(2),rs.getString(3), rs.getString(4));
@@ -152,6 +109,46 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
         }
         return odontologo;
     }
+
+    @Override
+    public void actualizar(Odontologo odontologo) {
+        logger.warn("Iniciando operaciones de actualización de odontólogo con id: " + odontologo.getId());
+        Connection connection = null;
+        try {
+            connection=BD.getConnection();
+            PreparedStatement psUpdate = connection.prepareStatement(SQL_UPDATE);
+            psUpdate.setString(1, odontologo.getNumeroMatricula());
+            psUpdate.setString(2,odontologo.getNombre());
+            psUpdate.setString(3,odontologo.getApellido());
+            psUpdate.setInt(4,odontologo.getId());
+            psUpdate.execute();
+        }catch (Exception e){
+            logger.error(e.getMessage());
+        }
+    }
+
+    @Override
+    public void eliminar(Integer id) {
+        logger.info("Iniciando operación de eliminación de odontólogo con id: " + id);
+        Connection connection=null;
+        try {
+            connection=BD.getConnection();
+            connection.setAutoCommit(false);
+            PreparedStatement psDelete = connection.prepareStatement(SQL_DELETE);
+            psDelete.setInt(1, id);
+            int filasAfectadas = psDelete.executeUpdate();
+            if (filasAfectadas == 0){
+                logger.error("No se encontró ningún odontólogo con id: " + id);
+            }else {
+                connection.commit();
+                logger.info("Odontólogo con id " + id + " eliminado correctamente.");
+            }
+        }
+        catch (Exception e){
+            logger.error(e.getMessage());
+        }
+    }
+
 }
 
 

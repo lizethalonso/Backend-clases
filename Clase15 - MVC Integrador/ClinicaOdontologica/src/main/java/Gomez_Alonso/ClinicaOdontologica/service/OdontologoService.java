@@ -29,16 +29,16 @@ public class OdontologoService {
         return odontologoiDao.buscarTodos();
     }
 
-    public void eliminarOdontologo(Integer id) {
-        odontologoiDao.eliminar(id);
+    public Odontologo buscarPorString(String campo, String string) {
+        return odontologoiDao.buscarPorString(campo,string);
     }
 
     public void actualizarOdontologo(Odontologo odontologo) {
         odontologoiDao.actualizar(odontologo);
     }
 
-    public Odontologo buscarPorMatricula(String matricula) {
-        return odontologoiDao.buscarPorString(matricula);
+    public void eliminarOdontologo(Integer id) {
+        odontologoiDao.eliminar(id);
     }
 
 }

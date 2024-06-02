@@ -14,10 +14,10 @@ public class PacienteDAOH2 implements iDao<Paciente> {
     private static final String SQL_SELECT_ONE="SELECT * FROM PACIENTES WHERE ID=?";
     private static final String SQL_INSERT="INSERT INTO PACIENTES(NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL, ODONTOLOGO_ID) VALUES(?,?,?,?,?,?,?)";
     private static final String SQL_SELECT_ALL="SELECT * FROM PACIENTES";
-    private static final String SQL_SELECT_BY_EMAIL="SELECT * FROM PACIENTES WHERE EMAIL=?";
-    private static final String SQL_ASSOCIATE="INSERT INTO PACIENTE_ODONTOLOGO (ID_PACIENTE, ID_ODONTOLOGO) VALUES (?,?)";
+    //private static final String SQL_SELECT_BY_EMAIL="SELECT * FROM PACIENTES WHERE EMAIL=?";
+    //private static final String SQL_ASSOCIATE="INSERT INTO PACIENTE_ODONTOLOGO (ID_PACIENTE, ID_ODONTOLOGO) VALUES (?,?)";
     private static final String SQL_UPDATE="UPDATE PACIENTES SET NOMBRE=?, APELLIDO=?, CEDULA=?, FECHA_INGRESO=?, DOMICILIO_ID=?, EMAIL=?, ODONTOLOGO_ID=? WHERE ID=?";
-    private static final String SQL_DELETE="DELETE FROM PACIENTES WHERE ID?";
+    private static final String SQL_DELETE="DELETE FROM PACIENTES WHERE ID=?";
 
     @Override
     public Paciente guardar(Paciente paciente) {
@@ -46,52 +46,6 @@ public class PacienteDAOH2 implements iDao<Paciente> {
         }
         logger.info("Paciente guardado con éxito: " + paciente.toString());
 
-        // Establecer la asociación entre el paciente y el odontólogo
-        asociarPacienteConOdontologo(paciente.getId(), paciente.getOdontologoAsignadoId());
-
-        }catch (Exception e){
-            logger.error(e.getMessage());
-        }
-        return paciente;
-    }
-
-    private void asociarPacienteConOdontologo(Integer idPaciente, Integer idOdontologo) {
-        logger.warn("Iniciando relación de odontólogo con id " + idOdontologo + " con paciente con id " + idPaciente);
-        Connection connection= null;
-        try{
-            connection= BD.getConnection();
-            Statement statement= connection.createStatement();
-            PreparedStatement psAsociar = connection.prepareStatement(SQL_ASSOCIATE);
-            psAsociar.setInt(1, idPaciente);
-            psAsociar.setInt(2, idOdontologo);
-            psAsociar.executeUpdate();
-        }
-        catch (Exception e){
-            logger.error(e.getMessage());
-        }
-    }
-
-    @Override
-    public Paciente buscarPorId(Integer id) {
-        logger.warn("Iniciando la operacion de buscado de un paciente con id : "+id);
-        Connection connection= null;
-        Paciente paciente= null;
-        Domicilio domicilio= null;
-        Odontologo odontologo=null;
-        try{
-            connection= BD.getConnection();
-            Statement statement= connection.createStatement();
-            PreparedStatement psSElectOne= connection.prepareStatement(SQL_SELECT_ONE);
-            psSElectOne.setInt(1,id);
-            ResultSet rs= psSElectOne.executeQuery();
-            DomicilioDAOH2 daoAux= new DomicilioDAOH2();
-            OdontologoDAOH2 daoAux2= new OdontologoDAOH2();
-            while(rs.next()){
-                domicilio= daoAux.buscarPorId(rs.getInt(6));
-                odontologo= daoAux2.buscarPorId(rs.getInt(8));
-                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), rs.getInt(8));
-                paciente.setOdontologoAsignado(odontologo);
-            }
         }catch (Exception e){
             logger.error(e.getMessage());
         }
@@ -116,6 +70,7 @@ public class PacienteDAOH2 implements iDao<Paciente> {
                 domicilio= daoAux.buscarPorId(rs.getInt(6));
                 odontologo= daoAux2.buscarPorId(rs.getInt(8));
                 paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3), rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), rs.getInt(8));
+                paciente.setOdontologoAsignado(odontologo);
                 pacientes.add(paciente);
             }
         }catch (Exception e){
@@ -125,8 +80,34 @@ public class PacienteDAOH2 implements iDao<Paciente> {
     }
 
     @Override
-    public Paciente buscarPorString(String string) {
-        logger.info("Iniciando la busqueda por email: "+string);
+    public Paciente buscarPorId(Integer id) {
+        logger.warn("Iniciando la operacion de buscado de un paciente con id : "+id);
+        Connection connection= null;
+        Paciente paciente= null;
+        Domicilio domicilio= null;
+        Odontologo odontologo=null;
+        try{
+            connection= BD.getConnection();
+            PreparedStatement psSElectOne= connection.prepareStatement(SQL_SELECT_ONE);
+            psSElectOne.setInt(1,id);
+            ResultSet rs= psSElectOne.executeQuery();
+            DomicilioDAOH2 daoAux= new DomicilioDAOH2();
+            OdontologoDAOH2 daoAux2= new OdontologoDAOH2();
+            while(rs.next()){
+                domicilio= daoAux.buscarPorId(rs.getInt(6));
+                odontologo= daoAux2.buscarPorId(rs.getInt(8));
+                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), rs.getInt(8));
+                paciente.setOdontologoAsignado(odontologo);
+            }
+        }catch (Exception e){
+            logger.error(e.getMessage());
+        }
+        return paciente;
+    }
+
+    @Override
+    public Paciente buscarPorString(String campo, String valor) {
+        logger.info("Iniciando la busqueda por : " + campo);
         Connection connection=null;
         Paciente paciente= null;
         Domicilio domicilio= null;
@@ -135,18 +116,20 @@ public class PacienteDAOH2 implements iDao<Paciente> {
         OdontologoDAOH2 daoAux2 = new OdontologoDAOH2();
         try{
             connection=BD.getConnection();
-            PreparedStatement psSelectE= connection.prepareStatement(SQL_SELECT_BY_EMAIL);
-            psSelectE.setString(1,string);
+            String SQL_SELECT_BY_STRING="SELECT * FROM PACIENTES WHERE " + campo  + " = ?";
+            PreparedStatement psSelectE= connection.prepareStatement(SQL_SELECT_BY_STRING);
+            psSelectE.setString(1,valor);
             ResultSet rs= psSelectE.executeQuery();
             while(rs.next()){
                 domicilio= daoAux.buscarPorId(rs.getInt(6));
                 odontologo= daoAux2.buscarPorId(rs.getInt(8));
                 paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), rs.getInt(8));
-
+                paciente.setOdontologoAsignado(odontologo);
             }
 
         }catch (Exception e){
             logger.error(e.getMessage());
+            return null;
         }
 
         return paciente;
@@ -183,11 +166,9 @@ public class PacienteDAOH2 implements iDao<Paciente> {
         try {
             connection= BD.getConnection();
             connection.setAutoCommit(false);
-            Statement statement = connection.createStatement();
             PreparedStatement psDelete = connection.prepareStatement(SQL_DELETE);
             psDelete.setInt(1,id);
             int filasAfectadas = psDelete.executeUpdate();
-
             if (filasAfectadas == 0){
                 logger.error("No se encontró ningún paciente con id: " + id);
             }else {
@@ -199,6 +180,7 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             logger.error(e.getMessage());
         }
     }
+
 
         /*private Integer id;
     private String nombre;

@@ -2,6 +2,7 @@ package Gomez_Alonso.ClinicaOdontologica.controller;
 
 import Gomez_Alonso.ClinicaOdontologica.model.Paciente;
 import Gomez_Alonso.ClinicaOdontologica.service.PacienteService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,13 +31,13 @@ public class PacienteController {
         //return pacienteService.buscarPorEmail(email);
     }*/
     @PostMapping //--> nos permite persistir los datos que vienen desde la vista
-    public Paciente guardarPaciente(@RequestBody Paciente paciente){
-        return pacienteService.guardarPaciente(paciente);
-    }
-
-    @GetMapping("/{id}")
-    public Paciente buscarPorPaciente(@PathVariable Integer id){
-        return pacienteService.buscarPorID(id);
+    public ResponseEntity<?> guardarPaciente(@RequestBody Paciente paciente){
+        Paciente pacienteExistente = pacienteService.buscarPorString("cedula", paciente.getCedula());
+        if ( pacienteExistente != null){
+            return ResponseEntity.badRequest().body("Ya existe un paciente con cédula " + paciente.getCedula());
+        }else {
+            return ResponseEntity.ok(pacienteService.guardarPaciente(paciente));
+        }
     }
 
     @GetMapping
@@ -49,25 +50,47 @@ public class PacienteController {
         }
     }
 
-    @GetMapping("/email")
-    public Paciente buscarPorEmail(@RequestParam String email){
-        return pacienteService.buscarPorEmail(email);
+    @GetMapping("/{id}")
+    public ResponseEntity<?> buscarPorPaciente(@PathVariable Integer id){
+        Paciente pacienteBuscado = pacienteService.buscarPorID(id);
+        if (pacienteBuscado != null){
+            return ResponseEntity.ok(pacienteBuscado);
+        }else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Paciente con ID " + id + " no encontrado");
+        }
+    }
+
+    @GetMapping("/buscar")
+    public ResponseEntity<?> buscarPorString(@RequestParam String campo, @RequestParam String valor){
+        Paciente pacienteBuscado = pacienteService.buscarPorString(campo,valor);
+        if (pacienteBuscado != null){
+            return ResponseEntity.ok(pacienteBuscado);
+        }else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Paciente con " + campo + " " + valor + " no encontrado");
+        }
     }
 
     @PutMapping
-    public String actualizarPaciente(@RequestBody Paciente paciente){
+    public ResponseEntity<String> actualizarPaciente(@RequestBody Paciente paciente){
         Paciente pacienteBuscado= pacienteService.buscarPorID(paciente.getId());
         if(pacienteBuscado!=null){
             pacienteService.actualizarPaciente(paciente);
-            return "paciente actualizado con exito";
+            return ResponseEntity.ok("Paciente actualizado con éxito");
         }else{
-            return "paciente no encontrado";
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("El paciente con ID " + paciente.getId() +
+                    " no se encuentra registrado para realizar la actualización");
+            //return ResponseEntity.notFound().build();
         }
     }
 
     @DeleteMapping("/eliminar/{id}")
-    public void eliminarPaciente(@PathVariable Integer id){
-        pacienteService.eliminarPaciente(id);
+    public ResponseEntity<?> eliminarPaciente(@PathVariable Integer id){
+        if (pacienteService.buscarPorID(id) != null){
+            pacienteService.eliminarPaciente(id);
+            return ResponseEntity.ok().body("Paciente con ID " + id + " eliminado con éxito");
+        }else{
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No se puede eliminar un paciente que no existe");
+        }
     }
 
 }

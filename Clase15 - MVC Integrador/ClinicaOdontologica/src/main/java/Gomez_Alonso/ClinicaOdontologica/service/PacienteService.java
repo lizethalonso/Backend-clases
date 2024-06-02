@@ -22,8 +22,8 @@ private iDao<Paciente> pacienteiDao;
         return pacienteiDao.buscarPorId(id);
     }
     public List<Paciente> buscarTodos(){ return pacienteiDao.buscarTodos();}
-    public Paciente buscarPorEmail(String email){
-        return pacienteiDao.buscarPorString(email);
+    public Paciente buscarPorString(String campo, String string){
+        return pacienteiDao.buscarPorString(campo,string);
     }
     public void actualizarPaciente(Paciente paciente){
         pacienteiDao.actualizar(paciente);

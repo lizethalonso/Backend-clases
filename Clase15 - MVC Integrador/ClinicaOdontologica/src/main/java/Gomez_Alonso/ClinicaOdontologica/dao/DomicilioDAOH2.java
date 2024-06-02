@@ -119,7 +119,7 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
     }
 
     @Override
-    public Domicilio buscarPorString(String string) {
+    public Domicilio buscarPorString(String campo,String valor) {
         return null;
     }
 

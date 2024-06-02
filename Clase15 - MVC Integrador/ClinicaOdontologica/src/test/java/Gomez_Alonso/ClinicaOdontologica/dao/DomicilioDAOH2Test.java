@@ -48,7 +48,7 @@ class DomicilioDAOH2Test {
         // Agregar un domicilio para la prueba
         //Domicilio domicilio = new Domicilio( "calle", 0, "localidad", "provincia");
         //domicilioDAOH2.guardar(domicilio);
-        
+
         // En guardar y buscar por id limpiaba la bd porq en ambas necesitaba guardar la dirección
         // y en buscar por id necesitaba tener esa en la bd, aquí como ya tenemos guardadas las
         // dos que vienen por defecto más la q sse agrega o en guardar o en buscarpor id, sólo

@@ -259,3 +259,4 @@ Database may be already in use: "C:/Users/lizet/clinicaOdontologica.mv.db". Poss
 [2024-05-31 18:08:32] [ INFO ] [DomicilioDAOH2:77] Domicilio con id 3 eliminado correctamente.
 [2024-05-31 18:08:32] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
 [2024-05-31 18:10:04] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
+[2024-05-31 21:07:11] [ INFO ] [DomicilioDAOH2:49] Iniciando la busqueda de un domicilio con id: 3
