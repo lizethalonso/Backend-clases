@@ -1,0 +1,11 @@
+¡Vamos a practicar!
+Módulo odontólogos
+Continuando con nuestro proyecto, llegó el momento de realizar la vista 
+que se comunica con la API de odontólogos. Para esta etapa nos piden desarrollar:
+
+Un formulario web en el que podamos dar de alta nuevos odontólogos en el sistema.
+Nuestro chapter lead nos solicita para este caso utilizar JavaScript y enviar 
+las peticiones al rest controller mediante AJAX con Fetch.
+
+Recordá agregar esta nueva funcionalidad al proyecto de la clínica en el que 
+ya venimos trabajando.

@@ -1,0 +1,34 @@
+Clase 18 
+
+¡Vamos a practicar!
+Ejercicio Películas
+El objetivo de esta actividad es afianzar los conocimientos vistos sobre DTO 
+y ResponseEntity y repasar las anotaciones más usadas.
+
+Desafío:
+
+Dada la entidad Película compuesta por:
+
+Título (String).
+Categoría (String).
+Premios (Integer).
+Id (Integer).
+Desarrollar una API que nos permita:
+
+Buscar todas las películas que tenemos guardadas. Queremos que se vea un 
+listado solamente con el título y la categoría: para este punto necesitamos 
+utilizar un DTO.
+PATH: /películas Método : GET
+Eliminar una película por id. En caso de que la película exista y se haya 
+podido eliminar correctamente, retornar con un código de estatus 200 
+utilizando ResponseEntity, en caso de no encontrar la película enviar 
+status 404.
+PATH: /{id} Método : DELETE
+Para este ejercicio no hace falta que uses una base de datos, podés 
+hacer las operaciones sobre una lista.
+
+¡Éxitos!
+
+Es muy importante que estudies el material en Playground antes de cada 
+encuentro online para que puedas aprovechar al máximo estas sesiones 
+con tus docentes y compañeros de cursada.
