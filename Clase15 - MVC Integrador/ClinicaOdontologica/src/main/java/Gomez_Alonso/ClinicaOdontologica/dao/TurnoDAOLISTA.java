@@ -13,6 +13,7 @@ import java.util.List;
 public class TurnoDAOLISTA implements iDao<Turno>{
     private Logger logger= Logger.getLogger(TurnoDAOLISTA.class);
     private List<Turno> turnos= new ArrayList<>();
+    Integer identification=1;
     @Override
     public Turno guardar(Turno turno) {
         logger.info("Iniciando las operaciones de guardado de un turno");
@@ -20,7 +21,9 @@ public class TurnoDAOLISTA implements iDao<Turno>{
         OdontologoDAOH2 odontologoDAOH2= new OdontologoDAOH2();
         turno.setPaciente(pacienteDAOH2.buscarPorId(turno.getPaciente().getId()));
         turno.setOdontologo(odontologoDAOH2.buscarPorId(turno.getOdontologo().getId()));
+        turno.setId(identification);
         turnos.add(turno);
+        identification++;
         logger.info("Turno guardado con exito");
         return turno;
     }
@@ -51,10 +54,17 @@ public class TurnoDAOLISTA implements iDao<Turno>{
         OdontologoDAOH2 odontologoDAOH2= new OdontologoDAOH2();
         Paciente paciente = pacienteDAOH2.buscarPorId(turno.getPaciente().getId());
         Odontologo odontologo = odontologoDAOH2.buscarPorId(turno.getOdontologo().getId());
+
         for (Turno turnoBuscar : turnos) {
             if (paciente == null || odontologo == null){
                 logger.error("No se pudo encontrar el paciente u odontólogo con los IDs proporcionados.");
                 throw new IllegalArgumentException("Paciente u odontólogo no encontrado");
+            }else {
+                turnoBuscar.setId(turno.getId());
+                turnoBuscar.setPaciente(paciente);
+                turnoBuscar.setOdontologo(odontologo);
+                turnoBuscar.setFecha(turno.getFecha());
+                turnoBuscar.setHora(turno.getHora());
             }
         }
     }
@@ -64,6 +74,7 @@ public class TurnoDAOLISTA implements iDao<Turno>{
         for (Turno turno : turnos) {
             if (turno.getId().equals(id)) {
                 turnos.remove(turno);
+                break;
             }else {
                 System.out.println("Turno con id " + id + " no encontrado");
             }

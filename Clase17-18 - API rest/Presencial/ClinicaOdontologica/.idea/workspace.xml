@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e80b0b20-34f9-4957-be38-7714aa5d6bf9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/Clase 19 ejercicio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/Ejercicio para clase 18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/java/com/dh/peliculas/api/PeliculasApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/java/com/dh/peliculas/api/controller/PeliculaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/java/com/dh/peliculas/api/dto/PeliculaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/java/com/dh/peliculas/api/model/Pelicula.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/java/com/dh/peliculas/api/repository/IRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/java/com/dh/peliculas/api/repository/impl/PeliculaListRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/java/com/dh/peliculas/api/service/PeliculaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/resources/static/js/delete_pelicula.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/resources/static/js/get_pelicula.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/resources/static/js/post_pelicula.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/resources/static/js/update_pelicula.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/resources/static/peliculaAlta.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/main/resources/static/peliculaList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clase19 - Consumir APIs/peliculas-api 4/src/test/java/com/dh/peliculas/api/PeliculasApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/cambios.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/Exceptions/PacienteNoEncontradoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/dao/BD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/dao/DomicilioDAOH2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/dao/OdontologoDAOCollection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/dao/OdontologoDAOH2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/dao/PacienteDAOH2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/dao/iDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/model/Domicilio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/model/Odontologo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/model/Paciente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/service/OdontologoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/java/org/example/service/PacienteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/test/java/Service/OdontologoCollectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/test/java/Service/OdontologoServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Clinica_Odontologica_Maven/src/test/java/Service/PacienteServiceTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2hThDDWwYJOnf5XcwFPdMeUHdYQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Documentos/Personal/Clases/Programación/Digital House/B5/Backend/Clases/Clase19-20 - Consumir APIs/presencial-profe/ClinicaOdontologica",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ClinicaOdontologicaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ClinicaOdontologica" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="BackEndC3.ClinicaOdontologica.ClinicaOdontologicaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e80b0b20-34f9-4957-be38-7714aa5d6bf9" name="Changes" comment="" />
+      <created>1717623874703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717623874703</updated>
+      <workItem from="1717623874828" duration="171000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

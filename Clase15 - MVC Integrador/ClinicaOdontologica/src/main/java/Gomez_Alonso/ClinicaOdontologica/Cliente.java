@@ -29,7 +29,7 @@ public class Cliente {
             System.out.println(odontologo.toString());
         }*/
         //Buscar por ID paciente
-        Paciente paciente= new Paciente("Luisa","Toro","111111", LocalDate.of(2024,5,21),new Domicilio("calle falsa",123,"cali","Colombia"),"luisa@email.com",1);
+        Paciente paciente= new Paciente("Luisa","Toro","111111", LocalDate.of(2024,5,21),new Domicilio("calle falsa",123,"cali","Colombia"),"luisa@email.com",odontologo0);
         PacienteService pacienteService= new PacienteService();
         pacienteService.guardarPaciente(paciente);
         System.out.println("Paciente encontrado: "+ pacienteService.buscarPorID(3));

@@ -36,10 +36,10 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             psInsert.setDate(4, Date.valueOf((paciente.getFechaIngreso())));
             psInsert.setInt(5,domicilio.getId());
             psInsert.setString(6, paciente.getEmail());
-            psInsert.setInt(7, paciente.getOdontologoAsignadoId());
+            psInsert.setInt(7, paciente.getOdontologo().getId());
             psInsert.execute();
-            odontologo= daoAux2.buscarPorId(paciente.getOdontologoAsignadoId());
-            paciente.setOdontologoAsignado(odontologo);
+            odontologo= daoAux2.buscarPorId(paciente.getOdontologo().getId());
+            paciente.setOdontologo(odontologo);
             ResultSet clave= psInsert.getGeneratedKeys();
         while (clave.next()){
             paciente.setId(clave.getInt(1));
@@ -69,8 +69,7 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             while(rs.next()){
                 domicilio= daoAux.buscarPorId(rs.getInt(6));
                 odontologo= daoAux2.buscarPorId(rs.getInt(8));
-                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3), rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), rs.getInt(8));
-                paciente.setOdontologoAsignado(odontologo);
+                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3), rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), odontologo);
                 pacientes.add(paciente);
             }
         }catch (Exception e){
@@ -96,8 +95,7 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             while(rs.next()){
                 domicilio= daoAux.buscarPorId(rs.getInt(6));
                 odontologo= daoAux2.buscarPorId(rs.getInt(8));
-                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), rs.getInt(8));
-                paciente.setOdontologoAsignado(odontologo);
+                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), odontologo);
             }
         }catch (Exception e){
             logger.error(e.getMessage());
@@ -123,8 +121,8 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             while(rs.next()){
                 domicilio= daoAux.buscarPorId(rs.getInt(6));
                 odontologo= daoAux2.buscarPorId(rs.getInt(8));
-                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), rs.getInt(8));
-                paciente.setOdontologoAsignado(odontologo);
+                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7), odontologo);
+                paciente.setOdontologo(odontologo);
             }
 
         }catch (Exception e){
@@ -150,7 +148,7 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             psUpdate.setDate(4,Date.valueOf(paciente.getFechaIngreso()));
             psUpdate.setInt(5,paciente.getDomicilio().getId());
             psUpdate.setString(6, paciente.getEmail());
-            psUpdate.setInt(7,paciente.getOdontologoAsignadoId());
+            psUpdate.setInt(7,paciente.getOdontologo().getId());
             psUpdate.setInt(8,paciente.getId());
             psUpdate.execute();
 
@@ -180,12 +178,4 @@ public class PacienteDAOH2 implements iDao<Paciente> {
             logger.error(e.getMessage());
         }
     }
-
-
-        /*private Integer id;
-    private String nombre;
-    private String apellido;
-    private String cedula;
-    private LocalDate fechaIngreso;
-    private Domicilio domicilio;*/
 }

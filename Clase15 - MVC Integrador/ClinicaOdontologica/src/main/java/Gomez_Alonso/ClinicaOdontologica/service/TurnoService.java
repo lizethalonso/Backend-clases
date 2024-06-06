@@ -21,4 +21,7 @@ public class TurnoService {
     public Turno buscarPorId(Integer id){
         return turnoiDao.buscarPorId(id);
     }
+    public void actualizarTurno(Turno turno) { turnoiDao.actualizar(turno);}
+    public void eliminarTurno (Integer id){ turnoiDao.eliminar(id);}
+
 }

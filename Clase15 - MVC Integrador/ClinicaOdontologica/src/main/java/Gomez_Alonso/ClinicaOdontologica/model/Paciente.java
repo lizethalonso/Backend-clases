@@ -14,20 +14,19 @@ public class Paciente {
     private LocalDate fechaIngreso;
     private Domicilio domicilio;
     private String email;
-    private Integer odontologoAsignadoId;
-    private Odontologo odontologoAsignado;
+    private Odontologo odontologo;
 
-    public Paciente(String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email, Integer odontologoAsignadoId) {
+    public Paciente(String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email, Odontologo odontologo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
         this.fechaIngreso = fechaIngreso;
         this.domicilio = domicilio;
         this.email = email;
-        this.odontologoAsignadoId = odontologoAsignadoId;
+        this.odontologo = odontologo;
     }
 
-    public Paciente(Integer id, String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email, Integer odontologoAsignadoId) {
+    public Paciente(Integer id, String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email, Odontologo odontologo) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -35,7 +34,7 @@ public class Paciente {
         this.fechaIngreso = fechaIngreso;
         this.domicilio = domicilio;
         this.email= email;
-        this.odontologoAsignadoId = odontologoAsignadoId;
+        this.odontologo = odontologo;
     }
 
     public Paciente() {
@@ -51,7 +50,7 @@ public class Paciente {
                 ", fechaIngreso=" + fechaIngreso +
                 ", domicilio=" + domicilio +
                 ", email='" + email + '\'' +
-                ", odontologo=" + odontologoAsignado +
+                ", odontologo=" + odontologo +
                 '}';
     }
 
