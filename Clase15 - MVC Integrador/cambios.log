@@ -2027,3 +2027,8 @@ Serialization failed, cause: "java.io.NotSerializableException: Gomez_Alonso.Cli
 [2024-06-05 23:06:59] [ INFO ] [OdontologoDAOH2:37] Odontologo agregado a la lista odontologo collection no bd 
 [2024-06-05 23:06:59] [ INFO ] [OdontologoDAOH2:39] Odontólogo guardado con éxito en la base de datos: Odontologo{id=3, numeroMatricula='25468', nombre='Luciano', apellido='Carreno'}
 [2024-06-05 23:07:12] [ INFO ] [OdontologoDAOH2:70] Inicia operación de búsqueda de todos los odontólogos
+[2024-06-05 23:25:00] [ INFO ] [BD:58] tabla creada con exito
+[2024-06-05 23:26:04] [ INFO ] [OdontologoDAOH2:94] iniciando las operaciones de búsqueda por: numero_matricula
+[2024-06-05 23:26:04] [ INFO ] [OdontologoDAOH2:37] Odontologo agregado a la lista odontologo collection no bd 
+[2024-06-05 23:26:04] [ INFO ] [OdontologoDAOH2:39] Odontólogo guardado con éxito en la base de datos: Odontologo{id=3, numeroMatricula='HOLA', nombre='DAVID', apellido='GUTIERREZ'}
+[2024-06-05 23:26:07] [ INFO ] [OdontologoDAOH2:70] Inicia operación de búsqueda de todos los odontólogos
