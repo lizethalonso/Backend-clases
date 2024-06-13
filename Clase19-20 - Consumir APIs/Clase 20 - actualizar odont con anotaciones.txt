@@ -1,0 +1,42 @@
+¡Vamos a practicar!
+Proyecto clinica odontologica
+
+Llegamos a la etapa de mejoras. Es momento de hacer una pausa 
+y mejorar el código ya desarrollado.
+
+Para esta etapa vas a implementar el patrón de inyección de 
+dependencias utilizando spring boot. Esta refactorización 
+del código la haremos en tres partes.
+
+El chapter lead te pide:
+
+Primera parte - CRUD odontólogos
+Utilizar las anotaciones @Repository, @Service y @Autowired 
+para que spring registre e inyecte las dependencias en 
+nuestras capas. Para esta parte solo debés realizarlo para 
+las clases que están relacionadas con las operaciones de 
+los odontólogos.
+Luego de finalizar cada parte, ejecutar los tests y probar 
+con postman el controller.
+
+Atención, antes de ejecutar los test tenés que agregar la 
+siguiente anotación en la clase que contiene los tests.
+
+    
+@RunWith(SpringRunner.class)
+    
+  
+Nos debería quedar algo así:
+
+    
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class OdontologoServiceTests {
+
+//metodos
+}
+    
+  
+Aclaración: en este caso, además estoy ordenando la ejecución 
+de los métodos por nombre.

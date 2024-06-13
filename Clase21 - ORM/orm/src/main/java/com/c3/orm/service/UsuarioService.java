@@ -28,4 +28,6 @@ public class UsuarioService {
     public Optional<Usuario> findUsuarioById(Long id) {
         return usuarioRepository.findById(id);
     }
+
+    public void deleteUsuario(Long id) { usuarioRepository.deleteById(id);}
 }

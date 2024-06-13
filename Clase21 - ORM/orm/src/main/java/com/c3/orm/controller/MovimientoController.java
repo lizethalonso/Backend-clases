@@ -25,6 +25,12 @@ public class MovimientoController {
     public ResponseEntity<List<Movimiento>> listarTodos(){
        return ResponseEntity.ok(movimientoService.listarTodos());
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Optional<Movimiento>> buscarPorId(@PathVariable Long id){
+       return ResponseEntity.ok(movimientoService.buscarPorId(id));
+    }
+
     @PutMapping
     public ResponseEntity<String> actualizarMovimiento(@RequestBody Movimiento movimiento){
         Optional<Movimiento> movimientoBuscado= movimientoService.buscarPorId(movimiento.getId());
@@ -35,8 +41,15 @@ public class MovimientoController {
             return ResponseEntity.badRequest().body("Movimiento no encontrado");
         }
     }
-    @GetMapping("/{id}")
-    public ResponseEntity<Optional<Movimiento>> buscarPorId(@PathVariable Long id){
-       return ResponseEntity.ok(movimientoService.buscarPorId(id));
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> eliminarMovimiento(@PathVariable Long id){
+       Optional<Movimiento> movimientoBuscado = movimientoService.buscarPorId(id);
+       if(movimientoBuscado.isPresent()){
+           movimientoService.eliminarMovimiento(id);
+           return ResponseEntity.ok("Movimiento eliminado con exito");
+       }else {
+           return ResponseEntity.badRequest().body("Movimiento no encontrado");
+       }
     }
 }

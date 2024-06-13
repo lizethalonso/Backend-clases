@@ -26,4 +26,5 @@ public class MovimientoService {
     public Optional<Movimiento> buscarPorId(Long id){
         return movimientoRepository.findById(id);
     }
+    public void eliminarMovimiento(Long id){ movimientoRepository.deleteById(id);}
 }
