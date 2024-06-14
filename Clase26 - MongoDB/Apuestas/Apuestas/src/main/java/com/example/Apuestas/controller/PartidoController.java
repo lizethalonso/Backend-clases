@@ -1,5 +1,6 @@
 package com.example.Apuestas.controller;
 
+import com.example.Apuestas.entity.Estado;
 import com.example.Apuestas.entity.Partido;
 import com.example.Apuestas.service.PartidoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +27,8 @@ public class PartidoController {
     }
 
     @GetMapping("/estado/{estado}")
-    public ResponseEntity<List<Partido>> buscarPartidoEnVivo(@PathVariable String estado){
-        return ResponseEntity.ok(partidoService.buscarPartidoEnVivo(estado));
+    public ResponseEntity<List<Partido>> buscarPartidoPorEstado(@PathVariable Estado estado){
+        return ResponseEntity.ok(partidoService.buscarPartidoPorEstado(estado));
     }
 
 }

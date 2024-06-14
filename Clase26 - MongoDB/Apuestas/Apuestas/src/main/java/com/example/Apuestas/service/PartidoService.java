@@ -18,7 +18,7 @@ public class PartidoService {
         return partidoRepository.save(partido);
     }
     public List<Partido> listarTodosPartidos(){ return partidoRepository.findAll(); }
-    public List<Partido> buscarPartidoEnVivo(String estado){
-        return partidoRepository.buscarPartidoEnVivo(estado);
+    public List<Partido> buscarPartidoPorEstado(Estado estado){
+        return partidoRepository.findPartidoByEstado(estado);
     }
 }
